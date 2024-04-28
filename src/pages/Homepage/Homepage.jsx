@@ -1,4 +1,5 @@
 import "./Homepage.css";
+import { Banner } from "./components/Banner/Banner";
 
 export const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ export const Homepage = () => {
         </div>
         <button className="botaoRosa">Login</button>
       </header>
+      <Banner></Banner>
     </>
   );
 };

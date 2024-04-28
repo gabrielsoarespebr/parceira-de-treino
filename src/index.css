@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* RESETANDO O CSS */
 *,
@@ -14,7 +16,7 @@
 /* CSS PERSONALIZADO */
 :root {
   --verdeEscuro: #119784;
-  --verdeClaro: #befbe8;
+  --verdeMedio: #32bb9d;
   --verdeClaro: #befbe8;
 
   --rosaClaro: #febdc3;
@@ -38,6 +40,8 @@ body {
 }
 
 .botaoRosa {
+  cursor: pointer;
+
   background-color: var(--rosaMedio);
   color: #fff;
   border: none;
@@ -46,4 +50,35 @@ body {
   padding: 0.7vh 1.8vw;
   border-radius: var(--bordaArredondada);
   filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
+}
+
+.botaoVerde {
+  cursor: pointer;
+
+  background-color: var(--verdeEscuro);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 0.7vh 1.8vw;
+  border-radius: var(--bordaArredondada);
+  filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
+
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: var(--verdeMedio);
+  }
+}
+
+.fonteTitulo {
+  font-family: "Merriweather", serif;
+}
+
+.fonteBotao {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.textoMaiusculo {
+  text-transform: uppercase;
 }
