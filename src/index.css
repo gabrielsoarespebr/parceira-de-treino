@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* RESETANDO O CSS */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* CSS PERSONALIZADO */
+:root {
+  --verdeEscuro: #119784;
+  --verdeClaro: #befbe8;
+  --verdeClaro: #befbe8;
+
+  --rosaClaro: #febdc3;
+  --rosaMedio: #dc7c91;
+  --rosaEscuro: #e35c7c;
+
+  --bordaArredondada: 0.2rem;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+.marca {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--verdeEscuro);
+}
+
+.botaoRosa {
+  background-color: var(--rosaMedio);
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.7vh 1.8vw;
+  border-radius: var(--bordaArredondada);
+  filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
+}
