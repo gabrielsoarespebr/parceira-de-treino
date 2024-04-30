@@ -18,6 +18,7 @@
   --verdeEscuro: #119784;
   --verdeMedio: #32bb9d;
   --verdeClaro: #befbe8;
+  --verdeTranslucido: #ECFDFA;
 
   --rosaClaro: #febdc3;
   --rosaMedio: #dc7c91;
@@ -29,6 +30,8 @@
 body {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
+
+  background-color: var(--verdeTranslucido);
 }
 
 .marca {
@@ -55,11 +58,19 @@ body {
 .botaoVerde {
   cursor: pointer;
 
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+
+  text-transform: uppercase;
+
   background-color: var(--verdeEscuro);
   color: #fff;
   border: none;
-  font-weight: bold;
-  padding: 0.7vh 1.8vw;
+
+  margin-top: 6vh;
+  padding: 0.7vh 4vw;
+
   border-radius: var(--bordaArredondada);
   filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
 
@@ -74,11 +85,31 @@ body {
   font-family: "Merriweather", serif;
 }
 
-.fonteBotao {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+.marginBottomTitulo {
+  margin-bottom: 4vw;
 }
 
 .textoMaiusculo {
   text-transform: uppercase;
+}
+
+.corVerdeEscuro{
+  color: var(--verdeEscuro)
+}
+
+.paddingPadrao{
+  padding: 4vw;
+}
+
+.displayFlex{
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2vw;
+
+  flex-wrap: wrap;
+}
+
+.centralizarElementos{
+  text-align: center;
 }
