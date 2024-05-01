@@ -1,15 +1,36 @@
 import "./Testimonials.css";
 
 import parceira12Manu from "/src/assets/image/parceira12Manu.png";
+import parceira2Jessica from "/src/assets/image/parceira2Jessica.png";
+import parceira8Sandra from "/src/assets/image/parceira8Sandra.png";
+import parceira5Camila from "/src/assets/image/parceira5Camila.png";
+import iconeEstrela from "/src/assets/icons/iconeEstrela.png";
 
 export const Testimonials = () => {
   const DepoimentosLista = [
     {
       nome: "Manu",
       imagemUrl: parceira12Manu,
-      imagemTextoAlternativo: "Mulher",
-      descricao:
-        "Não foi fácil encontrar outras mulheres que gostassem de basquete na minha região. Mas consegui graças à Parceira de Treino.",
+      depoimento:
+        "Não foi fácil encontrar outras mulheres que gostassem de basquete na minha região. Mas consegui graças ao site.",
+    },
+    {
+      nome: "Jéssica",
+      imagemUrl: parceira2Jessica,
+      depoimento:
+        "Fazer cardio sozinha é muito chato. Mas ter uma amiga para conversar sempre traz mais motivação.",
+    },
+    {
+      nome: "Sandra",
+      imagemUrl: parceira8Sandra,
+      depoimento:
+        "Recomendo muito! Criamos um grupo de Crossfit só para mulheres.",
+    },
+    {
+      nome: "Camila",
+      imagemUrl: parceira5Camila,
+      depoimento:
+        "No jiu-jitsu talvez sejamos minoria, mas aqui somos unanimidade!",
     },
   ];
 
@@ -20,19 +41,24 @@ export const Testimonials = () => {
       </h2>
       <ul id="depoimentosLista">
         {DepoimentosLista.map((pessoa, index) => (
-          <li className="depoimento corVerdeEscuro" key={index}>
-            <img src={pessoa.imagemUrl} alt={pessoa.imagemTextoAlternativo} />
+          <li className="depoimentoCartao corVerdeEscuro" key={index}>
+            <img src={pessoa.imagemUrl} alt="Mulher" />
             <div>
-              <div>
-                <p className="fonteTitulo">{pessoa.nome}</p>
+              <div className="nomeEAvaliacao">
+                <p className="pessoaNome">{pessoa.nome}</p>
+                <ul className="estrelasLista">
+                  {[...Array(5)].map((estrela,index)=>(<li key={index}>
+                    <img src={iconeEstrela} alt="Estrela" className="iconeEstrela" />
+                  </li>))}
+                </ul>
               </div>
 
-              <p>{pessoa.descricao}</p>
+              <p>{pessoa.depoimento}</p>
             </div>
           </li>
         ))}
       </ul>
-      <button className="botaoVerde">Aproveitar benefícios</button>
+      <button className="botaoVerde">Quero participar também</button>
     </section>
   );
 };

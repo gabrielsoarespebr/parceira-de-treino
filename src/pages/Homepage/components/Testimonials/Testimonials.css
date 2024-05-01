@@ -1,10 +1,63 @@
-#depoimentosLista{
-    list-style: none;
+#depoimentosLista {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 2vw;
 }
 
-.depoimento{
+.depoimentoCartao {
+  display: flex;
 
-    &>img{
-        width: 15vw;
-    }
+  width: 44vw;
+
+  & > img {
+    width: 15vw;
+    
+    border: 0.1rem solid var(--verdeEscuro);
+
+    border-radius: var(--bordaArredondada) 0 0 var(--bordaArredondada);
+  }
+
+  & > div {
+    border: 0.1rem solid var(--verdeEscuro);
+    border-left: 0;
+    border-radius: 0 var(--bordaArredondada) var(--bordaArredondada) 0;
+
+    padding: 2vw;
+
+    text-align: start;
+
+    background: linear-gradient(var(--branco) 60%, var(--rosaClaro));
+  }
+
+  & ul {
+    list-style: none;
+  }
+}
+
+.nomeEAvaliacao {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1vh;
+}
+
+.pessoaNome {
+  font-weight: 500;
+}
+
+.estrelasLista{
+  display: flex;
+  gap: .3vw;
+}
+
+.iconeEstrela {
+  width: 2vw;
 }
