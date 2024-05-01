@@ -1,4 +1,5 @@
 import "./Homepage.css";
+import { About } from "./components/About/About";
 import { Banner } from "./components/Banner/Banner";
 import { Benefits } from "./components/Benefits/Benefits";
 
@@ -16,8 +17,9 @@ export const Homepage = () => {
         </div>
         <button className="botaoRosa">Login</button>
       </header>
-      <Banner></Banner>
-      <Benefits></Benefits>
+      <Banner/>
+      <Benefits/>
+      <About/>
     </>
   );
 };

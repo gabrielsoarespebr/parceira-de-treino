@@ -1,0 +1,42 @@
+.fundoRosa{
+    background: url("../../../../assets/image/fundoTexturaRosa.png");
+    background-repeat: repeat;
+}
+
+#passoAPassoLista{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+
+    & img{
+        width: 60vw;
+        border-radius: var(--bordaArredondada);
+
+        margin-bottom: 3vh;
+    }
+
+    & div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        font-weight: 500;
+
+        &>.numero{
+            background-color: var(--branco);
+            color: var(--rosaEscuro);
+
+            font-size: 150%;
+            padding: .7rem 1.2rem;
+            border-radius: 50%;
+
+        }
+        
+        &>p:nth-child(2){
+            width: 60%;
+        }
+    }
+}
