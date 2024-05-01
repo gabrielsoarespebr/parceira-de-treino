@@ -24,7 +24,9 @@
   --rosaMedio: #dc7c91;
   --rosaEscuro: #e35c7c;
 
-  --bordaArredondada: 0.2rem;
+  --branco: #fff;
+
+  --bordaArredondada: 0.4rem;
 }
 
 body {
@@ -74,7 +76,7 @@ body {
   border-radius: var(--bordaArredondada);
   filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
 
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 
   &:hover {
     background-color: var(--verdeMedio);
@@ -91,6 +93,10 @@ body {
 
 .textoMaiusculo {
   text-transform: uppercase;
+}
+
+.corBranco{
+  color: var(--branco)
 }
 
 .corVerdeEscuro{
