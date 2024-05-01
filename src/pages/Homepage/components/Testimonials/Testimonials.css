@@ -1,0 +1,10 @@
+#depoimentosLista{
+    list-style: none;
+}
+
+.depoimento{
+
+    &>img{
+        width: 15vw;
+    }
+}
