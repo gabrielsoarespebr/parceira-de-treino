@@ -18,7 +18,7 @@
   --verdeEscuro: #119784;
   --verdeMedio: #32bb9d;
   --verdeClaro: #befbe8;
-  --verdeTranslucido: #ECFDFA;
+  --verdeTranslucido: #ecfdfa;
 
   --rosaClaro: #febdc3;
   --rosaMedio: #dc7c91;
@@ -26,7 +26,7 @@
 
   --branco: #fff;
 
-  --roxo: #C979AC;
+  --roxo: #c979ac;
 
   --bordaArredondada: 0.4rem;
 }
@@ -47,26 +47,34 @@ body {
   color: var(--verdeEscuro);
 }
 
-.botaoBranco {
+.botaoBranco,
+.botaoRosa,
+.botaoVerde {
   cursor: pointer;
 
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 120%;
-
-  text-transform: uppercase;
-
-  background-color: var(--branco);
-  color: var(--rosaEscuro);
   border: none;
-
-  margin-top: 6vh;
-  padding: 0.7vh 4vw;
 
   border-radius: var(--bordaArredondada);
   filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
 
   transition: ease-in-out 0.3s;
+}
+
+.botaoBranco,
+.botaoVerde {
+  font-size: 120%;
+
+  margin-top: 6vh;
+  padding: 0.7vh 4vw;
+
+  text-transform: uppercase;
+}
+
+.botaoBranco {
+  background-color: var(--branco);
+  color: var(--rosaEscuro);
 
   &:hover {
     background-color: var(--roxo);
@@ -75,38 +83,20 @@ body {
 }
 
 .botaoRosa {
-  cursor: pointer;
-
   background-color: var(--rosaMedio);
   color: var(--branco);
-  border: none;
   font-family: inherit;
   font-weight: bold;
   padding: 0.7vh 1.8vw;
-  border-radius: var(--bordaArredondada);
-  filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
+
+  &:hover {
+    background-color: var(--rosaEscuro);
+  }
 }
 
 .botaoVerde {
-  cursor: pointer;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 120%;
-
-  text-transform: uppercase;
-
   background-color: var(--verdeEscuro);
   color: #fff;
-  border: none;
-
-  margin-top: 6vh;
-  padding: 0.7vh 4vw;
-
-  border-radius: var(--bordaArredondada);
-  filter: drop-shadow(0px 1px 1px rgb(142, 142, 142));
-
-  transition: ease-in-out 0.3s;
 
   &:hover {
     background-color: var(--verdeMedio);
@@ -125,19 +115,19 @@ body {
   text-transform: uppercase;
 }
 
-.corBranco{
-  color: var(--branco)
+.corBranco {
+  color: var(--branco);
 }
 
-.corVerdeEscuro{
-  color: var(--verdeEscuro)
+.corVerdeEscuro {
+  color: var(--verdeEscuro);
 }
 
-.paddingPadrao{
+.paddingPadrao {
   padding: 4vw;
 }
 
-.displayFlex{
+.displayFlex {
   display: flex;
   justify-content: space-between;
 
@@ -146,6 +136,6 @@ body {
   flex-wrap: wrap;
 }
 
-.centralizarElementos{
+.centralizarElementos {
   text-align: center;
 }
