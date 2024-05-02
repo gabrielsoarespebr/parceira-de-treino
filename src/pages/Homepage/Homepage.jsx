@@ -2,6 +2,7 @@ import "./Homepage.css";
 import { About } from "./components/About/About";
 import { Banner } from "./components/Banner/Banner";
 import { Benefits } from "./components/Benefits/Benefits";
+import { Footer } from "./components/Footer/Footer";
 import { Professional } from "./components/Professional/Professional";
 import { Testimonials } from "./components/Testimonials/Testimonials";
 
@@ -24,6 +25,7 @@ export const Homepage = () => {
       <About/>
       <Testimonials/>
       <Professional/>
+      <Footer/>
     </>
   );
 };

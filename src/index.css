@@ -25,6 +25,7 @@
   --rosaEscuro: #e35c7c;
 
   --branco: #fff;
+  --preto: #000;
 
   --roxo: #c979ac;
 
@@ -96,7 +97,7 @@ body {
 
 .botaoVerde {
   background-color: var(--verdeEscuro);
-  color: #fff;
+  color: var(--branco);
 
   &:hover {
     background-color: var(--verdeMedio);
@@ -138,4 +139,99 @@ body {
 
 .centralizarElementos {
   text-align: center;
+}
+
+.rodape {
+  background-color: var(--branco);
+
+  & h3 {
+    margin-bottom: 1vh;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+
+    & > div:first-of-type {
+      display: flex;
+      gap: 1.5rem;
+
+      & > img {
+        width: 13vw;
+        object-fit: contain;
+
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+
+  & ul {
+    list-style: none;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & > p {
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
+
+.navegadorRodape {
+  & a {
+    text-decoration: none;
+    color: var(--preto);
+
+    &:hover {
+      color: var(--rosaEscuro);
+    }
+  }
+}
+
+.redesSociaisRodape {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  > li {
+    background-color: var(--rosaEscuro);
+
+    border-radius: 50%;
+
+    > :hover {
+      background-color: var(--rosaClaro);
+
+      border-radius: 50%;
+
+      outline: .1rem solid var(--rosaEscuro);
+    }
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5vw;
+    height: auto;
+
+    padding: 0.6rem 0.4rem;
+
+    text-decoration: none;
+  }
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
+
+    color: var(--branco);
+  }
+}
+
+.redesSociaisRodape > li:hover svg {
+  color: var(--rosaEscuro);
 }
