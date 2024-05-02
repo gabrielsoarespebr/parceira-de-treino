@@ -1,0 +1,20 @@
+#profissionais {
+  width: 50vw;
+
+  border-radius: var(--bordaArredondada);
+}
+
+#textoAreaProfissional {
+  width: 50vw;
+  
+  margin: auto;
+
+  &>p{
+    margin-top: 2vh;
+
+    &>span{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+  }
+}
