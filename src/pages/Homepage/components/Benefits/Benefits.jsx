@@ -42,7 +42,7 @@ export const Benefits = () => {
       <h2 className="fonteTitulo marginBottomTitulo textoMaiusculo corVerdeEscuro tituloSection">
         Ter uma parceira de treino é
       </h2>
-      <ul className="displayFlex">
+      <ul className="displayFlex beneficiosLista">
         {BeneficiosLista.map((beneficio, index) => (
           <li className="beneficio" key={index}>
             <p className="fonteTitulo">{beneficio.titulo}</p>

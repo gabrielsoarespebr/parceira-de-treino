@@ -250,7 +250,25 @@ Medium (641px to 1007px)
 Large (1008px and larger) */
 
 @media (max-width: 430px) {
-  .botaoRosa{
+  .paddingPadrao {
+    padding: 10vw;
+  }
+
+  .botaoRosa {
     font-size: inherit;
+  }
+
+  section {
+    & > h2 {
+      font-size: 120%;
+    }
+  }
+
+  .botaoBranco,
+  .botaoVerde {
+    font-size: 150%;
+
+    margin-top: 4vh;
+    margin-bottom: 1vh;
   }
 }
