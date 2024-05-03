@@ -203,7 +203,7 @@ body {
     border-radius: 50%;
 
     > :hover {
-      background-color: var(--rosaClaro);
+      background-color: var(--branco);
 
       border-radius: 50%;
 
