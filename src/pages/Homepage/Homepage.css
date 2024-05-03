@@ -17,6 +17,18 @@ header {
 
   & img {
     width: 8vw;
+    object-fit: contain;
     aspect-ratio: 1/1;
+  }
+}
+
+
+@media (max-width: 430px) {
+  header{
+    height: 7vh;
+
+    & img{
+      width: 15vw;
+    }
   }
 }
