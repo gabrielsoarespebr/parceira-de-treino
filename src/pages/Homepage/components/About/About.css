@@ -1,42 +1,52 @@
-.fundoRoxoTranslucido{
-    background: url("../../../../assets/image/fundoTexturaRoxoTranslucido.png");
-    background-repeat: repeat;
+.fundoRoxoTranslucido {
+  background: url("../../../../assets/image/fundoTexturaRoxoTranslucido.png");
+  background-repeat: repeat;
 }
 
-#passoAPassoLista{
-    list-style: none;
+#passoAPassoLista {
+  list-style: none;
 
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+
+  & img {
+    width: 60vw;
+    border-radius: var(--bordaArredondada);
+
+    margin-bottom: 3vh;
+  }
+
+  & div {
     display: flex;
-    flex-direction: column;
-    gap: 7vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-    & img{
-        width: 60vw;
-        border-radius: var(--bordaArredondada);
+    font-weight: 500;
 
-        margin-bottom: 3vh;
+    & > .numero {
+      background-color: var(--roxoEscuro);
+      color: var(--branco);
+
+      font-size: 150%;
+      padding: 0.7rem 1.2rem;
+      border-radius: 50%;
     }
 
-    & div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        font-weight: 500;
-
-        &>.numero{
-            background-color: var(--roxoEscuro);
-            color: var(--branco);
-
-            font-size: 150%;
-            padding: .7rem 1.2rem;
-            border-radius: 50%;
-
-        }
-        
-        &>p:nth-child(2){
-            width: 60%;
-        }
+    & > p:nth-child(2) {
+      width: 60%;
     }
+  }
+}
+
+@media (max-width: 430px) {
+    .numero {
+    font-size: 80% !important;
+    padding: 0.4rem .7rem !important;
+  }
+
+  #passoAPassoLista div> p:nth-child(2){
+    width: auto;
+  }
 }
