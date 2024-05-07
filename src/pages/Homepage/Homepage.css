@@ -7,14 +7,6 @@ header {
 
   padding: .5vh 4vw .5vh 3.5vw;
 
-  & .marca {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    gap: 1rem;
-  }
-
   & img {
     width: 15vw;
     height: 7vh;
