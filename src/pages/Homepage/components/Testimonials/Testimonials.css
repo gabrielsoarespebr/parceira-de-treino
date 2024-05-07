@@ -18,13 +18,13 @@
   & > img {
     width: 15vw;
     
-    border: 0.1rem solid var(--verdeEscuro);
+    border: 0.1rem solid var(--roxoEscuro);
 
     border-radius: var(--bordaArredondada) 0 0 var(--bordaArredondada);
   }
 
   & > div {
-    border: 0.1rem solid var(--verdeEscuro);
+    border: 0.1rem solid var(--roxoEscuro);
     border-left: 0;
     border-radius: 0 var(--bordaArredondada) var(--bordaArredondada) 0;
 
@@ -32,7 +32,8 @@
 
     text-align: start;
 
-    background: linear-gradient(var(--branco) 60%, var(--rosaClaro));
+    background: linear-gradient(60deg,var(--roxoMedio),var(--roxoEscuro)) ;
+    color: var(--branco)
   }
 
   & ul {
@@ -56,9 +57,5 @@
 
 .estrelasLista{
   display: flex;
-  gap: .3vw;
-}
-
-.iconeEstrela {
-  width: 2vw;
+  gap: .6vw;
 }

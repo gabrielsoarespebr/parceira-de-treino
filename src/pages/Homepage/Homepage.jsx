@@ -1,3 +1,4 @@
+import { Divider } from "../../shared/components/Divider/Divider";
 import "./Homepage.css";
 import { About } from "./components/About/About";
 import { Banner } from "./components/Banner/Banner";
@@ -10,22 +11,24 @@ export const Homepage = () => {
   return (
     <>
       <header>
-        <div className="marca">
-          <img
-            src="./src/assets/image/logoFundoTransparente.png"
-            alt="logo"
-            id="logoHeader"
-          />
-          <h1>Parceira de Treino</h1>
-        </div>
-        <button className="botaoRosa">Login</button>
+        <img
+          src="./src/assets/image/logoBranco.png"
+          alt="Logotipo FitSister"
+          id="logoHeader"
+        />
+        <button className="botaoBranco">Login</button>
       </header>
-      <Banner/>
-      <Benefits/>
-      <About/>
-      <Testimonials/>
-      <Professional/>
-      <Footer/>
+      <Banner />
+      <Divider />
+      <Benefits />
+      <Divider />
+      <About />
+      <Divider />
+      <Testimonials />
+      <Divider />
+      <Professional />
+      <Divider />
+      <Footer />
     </>
   );
 };

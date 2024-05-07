@@ -1,5 +1,5 @@
-.fundoRosa{
-    background: url("../../../../assets/image/fundoTexturaRosa.png");
+.fundoRoxoTranslucido{
+    background: url("../../../../assets/image/fundoTexturaRoxoTranslucido.png");
     background-repeat: repeat;
 }
 
@@ -26,8 +26,8 @@
         font-weight: 500;
 
         &>.numero{
-            background-color: var(--branco);
-            color: var(--rosaEscuro);
+            background-color: var(--roxoEscuro);
+            color: var(--branco);
 
             font-size: 150%;
             padding: .7rem 1.2rem;

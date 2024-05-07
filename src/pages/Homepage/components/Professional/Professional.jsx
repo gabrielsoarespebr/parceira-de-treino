@@ -3,7 +3,7 @@ import profissionais1 from "/src/assets/image/profissionais1.png";
 
 export const Professional = () => {
   return (
-    <section className="paddingPadrao centralizarElementos fundoRosa corBranco">
+    <section className="paddingPadrao centralizarElementos fundoRoxoTranslucido corRoxo">
       <h2 className="fonteTitulo marginBottomTitulo textoMaiusculo tituloSection">
         Área profissional
       </h2>
@@ -20,7 +20,7 @@ export const Professional = () => {
         <p>Nossa plataforma conecta profissionais como você com uma comunidade ativa em busca de orientação para alcançar objetivos de saúde e bem-estar.</p>
         <p>Ao se juntar a nós, você terá a oportunidade de <span>ampliar seu público-alvo e crescer profissionalmente</span>!</p>
       </div>
-      <button className="botaoBranco">Divulgar meu trabalho</button>
+      <button className="botaoRoxo">Divulgar meu trabalho</button>
     </section>
   );
 };

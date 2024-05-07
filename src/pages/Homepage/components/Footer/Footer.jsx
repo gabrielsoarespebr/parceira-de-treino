@@ -1,11 +1,11 @@
-import logo from "/src/assets/image/logoFundoTransparente.png";
+import logo from "/src/assets/image/logoRoxo.png";
 
 export const Footer = () => {
   return (
     <section className="paddingPadrao rodape">
       <div>
         <div>
-          <img src={logo} alt="Logotipo Parceira de Treino" />
+          <img src={logo} alt="Logotipo FitSister" />
           <div>
             <h3>Sobre o Parceira de Treino</h3>
             <ul className="navegadorRodape">

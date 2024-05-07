@@ -1,5 +1,5 @@
 header {
-  background-color: #befbe8;
+  background: linear-gradient(var(--roxoMedio),var(--roxoEscuro));
 
   display: flex;
   justify-content: space-between;
@@ -16,9 +16,9 @@ header {
   }
 
   & img {
-    width: 8vw;
+    width: 15vw;
+    height: 7vh;
     object-fit: contain;
-    aspect-ratio: 1/1;
   }
 }
 

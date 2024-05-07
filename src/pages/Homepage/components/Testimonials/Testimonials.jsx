@@ -4,7 +4,6 @@ import parceira12Manu from "/src/assets/image/parceira12Manu.png";
 import parceira2Jessica from "/src/assets/image/parceira2Jessica.png";
 import parceira8Sandra from "/src/assets/image/parceira8Sandra.png";
 import parceira5Camila from "/src/assets/image/parceira5Camila.png";
-import iconeEstrela from "/src/assets/icons/iconeEstrela.png";
 
 export const Testimonials = () => {
   const DepoimentosLista = [
@@ -47,9 +46,20 @@ export const Testimonials = () => {
               <div className="nomeEAvaliacao">
                 <p className="pessoaNome">{pessoa.nome}</p>
                 <ul className="estrelasLista">
-                  {[...Array(5)].map((estrela,index)=>(<li key={index}>
-                    <img src={iconeEstrela} alt="Estrela" className="iconeEstrela" />
-                  </li>))}
+                  {[...Array(5)].map((estrela, index) => (
+                    <li key={index}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
@@ -58,7 +68,7 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-      <button className="botaoVerde">Quero participar também</button>
+      <button className="botaoRoxo">Quero participar também</button>
     </section>
   );
 };

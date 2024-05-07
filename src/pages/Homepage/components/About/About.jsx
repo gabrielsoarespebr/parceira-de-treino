@@ -26,7 +26,7 @@ export const About = () => {
   ];
 
   return (
-    <section className="paddingPadrao centralizarElementos fundoRosa corBranco">
+    <section className="paddingPadrao centralizarElementos fundoRoxoTranslucido corRoxo">
       <h2 className="fonteTitulo marginBottomTitulo textoMaiusculo tituloSection">
         Como funciona?
       </h2>
@@ -45,7 +45,7 @@ export const About = () => {
         })}
       </ul>
 
-      <button className="botaoBranco">Encontre sua parceira</button>
+      <button className="botaoRoxo">Encontre sua parceira</button>
     </section>
   );
 };

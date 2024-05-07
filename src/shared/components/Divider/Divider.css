@@ -1,0 +1,8 @@
+.divider{
+    background-color: var(--roxoEscuro);
+
+    background: linear-gradient(270deg,#bb529f,var(--roxoEscuro));
+
+
+    height: .5vh;
+}
