@@ -114,7 +114,7 @@ body {
   text-align: center;
 }
 
-.rodape {
+#rodape {
   background-color: var(--branco);
 
   & h3 {
@@ -163,7 +163,7 @@ body {
   }
 }
 
-.redesSociaisRodape {
+#redesSociaisRodape {
   width: 40%;
 
   display: flex;
@@ -231,5 +231,43 @@ Large (1008px and larger) */
 
     margin-top: 4vh;
     margin-bottom: 1vh;
+  }
+
+  #rodape{
+    text-align: center;
+  }
+
+  #rodape img{
+    width: 80% !important;
+    height: 8vh;
+    align-self: center;
+  }
+
+  #rodape>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  #rodape>div>div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #redesSociaisRodape{
+    width: 100%;
+
+    margin-bottom: 2vh;
+
+    &>li{
+      width: 25%;
+
+      display: flex;
+      justify-content: center;
+
+      &>a{
+        width: 4rem;
+      }
+    }
   }
 }

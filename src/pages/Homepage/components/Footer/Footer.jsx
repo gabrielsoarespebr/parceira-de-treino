@@ -2,7 +2,7 @@ import logo from "/src/assets/image/logoRoxo.png";
 
 export const Footer = () => {
   return (
-    <section className="paddingPadrao rodape">
+    <section className="paddingPadrao" id="rodape">
       <div>
         <div>
           <img src={logo} alt="Logotipo FitSister" />
@@ -29,7 +29,7 @@ export const Footer = () => {
         </div>
         <div>
           <h3>Redes sociais</h3>
-          <ul className="redesSociaisRodape">
+          <ul id="redesSociaisRodape">
             <li>
               <a href="">
                 <svg
