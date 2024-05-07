@@ -28,7 +28,8 @@ header {
     height: 7vh;
 
     & img{
-      width: 15vw;
+      width: auto;
+      height: 65%;
     }
   }
 }
