@@ -41,12 +41,16 @@
 }
 
 @media (max-width: 430px) {
-    .numero {
-    font-size: 80% !important;
-    padding: 0.4rem .7rem !important;
+  #passoAPassoLista img {
+    width: 90%;
   }
 
-  #passoAPassoLista div> p:nth-child(2){
+  .numero {
+    font-size: 80% !important;
+    padding: 0.4rem 0.7rem !important;
+  }
+
+  #passoAPassoLista div > p:nth-child(2) {
     width: auto;
   }
 }
