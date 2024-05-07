@@ -12,14 +12,14 @@ export const Benefits = () => {
       iconeUrl: iconeMusculoUrl,
       iconeTextoAlternativo: "Ícone de músculo",
       descricao:
-        "84,4% das mulheres acreditam que ter uma parceira de treino melhora a motivação",
+        "84,4% das mulheres acreditam que ter uma fit sister melhora a motivação",
     },
     {
       titulo: "+ SEGURANÇA",
       iconeUrl: iconeEscudoUrl,
       iconeTextoAlternativo: "Ícone de escudo",
       descricao:
-        "81,3% das mulheres acreditam que ter uma parceira de treino traz mais segurança",
+        "81,3% das mulheres acreditam que ter uma fit sister traz mais segurança",
     },
     {
       titulo: "+ SAÚDE",
@@ -40,7 +40,7 @@ export const Benefits = () => {
   return (
     <section className="paddingPadrao centralizarElementos">
       <h2 className="fonteTitulo marginBottomTitulo textoMaiusculo corVerdeEscuro tituloSection">
-        Ter uma parceira de treino é
+        Ter uma fit sister é
       </h2>
       <ul className="displayFlex beneficiosLista">
         {BeneficiosLista.map((beneficio, index) => (

@@ -15,13 +15,13 @@ export const About = () => {
       imagemUrl: mulherNoCelular2,
       imagemTextoAlternativo: "Mulher no celular",
       descricao:
-        "Você encontra mulheres na sua região que também buscam por uma parceira de treino.",
+        "Você encontra mulheres na sua região que também buscam por uma fit sister.",
     },
     {
       imagemUrl: duplaParceiras2,
       imagemTextoAlternativo: "Mulheres treinando juntas",
       descricao:
-        "Vocês conversam e, se rolar afinidade, tornam-se parceiras de treino.",
+        "Vocês conversam e, se rolar afinidade, tornam-se fit sisters.",
     },
   ];
 
@@ -45,7 +45,7 @@ export const About = () => {
         })}
       </ul>
 
-      <button className="botaoRoxo">Encontre sua parceira</button>
+      <button className="botaoRoxo">Encontre sua fit sister</button>
     </section>
   );
 };

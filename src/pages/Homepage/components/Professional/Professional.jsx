@@ -16,8 +16,8 @@ export const Professional = () => {
           instrutora de pilates</span> apaixonada por ajudar outras mulheres a alcançarem
           sua melhor versão?
         </p>
-        <p>Então, a Parceira de Treino é o lugar ideal para você!</p>
-        <p>Nossa plataforma conecta profissionais como você com uma comunidade ativa em busca de orientação para alcançar objetivos de saúde e bem-estar.</p>
+        <p>Então, a Fit Sister é o lugar ideal para você!</p>
+        <p>Nossa plataforma conecta você com uma comunidade ativa em busca de orientação para alcançar objetivos de saúde e bem-estar.</p>
         <p>Ao se juntar a nós, você terá a oportunidade de <span>ampliar seu público-alvo e crescer profissionalmente</span>!</p>
       </div>
       <button className="botaoRoxo">Divulgar meu trabalho</button>
