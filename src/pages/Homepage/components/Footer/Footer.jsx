@@ -7,7 +7,7 @@ export const Footer = () => {
         <div>
           <img src={logo} alt="Logotipo FitSister" />
           <div>
-            <h3>Sobre o Parceira de Treino</h3>
+            <h3>Sobre a Fit Sister</h3>
             <ul className="navegadorRodape">
               <li>
                 <a href="">Cadastre-se como usuária</a>
