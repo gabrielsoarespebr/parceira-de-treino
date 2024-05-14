@@ -1,9 +1,9 @@
 import "./Testimonials.css";
 
-import parceira12Manu from "/src/assets/image/parceira12Manu.png";
-import parceira2Jessica from "/src/assets/image/parceira2Jessica.png";
-import parceira8Sandra from "/src/assets/image/parceira8Sandra.png";
-import parceira5Camila from "/src/assets/image/parceira5Camila.png";
+import parceira12Manu from "/src/assets/image/usuarias/parceira12Manu.png";
+import parceira2Jessica from "/src/assets/image/usuarias/parceira2Jessica.png";
+import parceira8Sandra from "/src/assets/image/usuarias/parceira8Sandra.png";
+import parceira5Camila from "/src/assets/image/usuarias/parceira5Camila.png";
 
 export const Testimonials = () => {
   const DepoimentosLista = [
