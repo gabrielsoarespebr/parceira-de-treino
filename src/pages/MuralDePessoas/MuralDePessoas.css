@@ -1,0 +1,10 @@
+#muralDePessoas {
+  padding: 4vh 4vw;
+
+  & > ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

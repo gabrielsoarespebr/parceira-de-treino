@@ -2,6 +2,7 @@ import "./MuralDePessoas.css";
 import { Divider } from "../../shared/components/Divider/Divider";
 import { Banner } from "./components/Banner/Banner";
 import { UsuariaCard } from "./components/UsuariaCard/UsuariaCard";
+import { Usuarias } from "../../data/Usuarias";
 
 export const MuralDePessoas = () => {
   return (
@@ -35,11 +36,19 @@ export const MuralDePessoas = () => {
       </header>
       <Banner />
       <Divider />
-      <section>
+      <section id="muralDePessoas">
         <ul>
-          <li>
-            <UsuariaCard />
-          </li>
+          {Usuarias.map((usuaria, id) => (
+            <li key={id}>
+              <UsuariaCard
+                fotoPerfilUrl={usuaria.fotoPerfilUrl}
+                nome={usuaria.nome}
+                dataNascimento={usuaria.dataNascimento}
+                objetivo={usuaria.objetivo}
+                esportes={usuaria.esportes}
+              />
+            </li>
+          ))}
         </ul>
       </section>
     </>
