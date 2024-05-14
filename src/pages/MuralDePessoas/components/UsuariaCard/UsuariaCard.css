@@ -1,0 +1,133 @@
+.usuariaCard {
+  position: relative;
+
+  width: var(--larguraFotoCard);
+
+  border: 0.1rem solid var(--roxoEscuro);
+  border-radius: var(--bordaArredondada);
+
+  & img {
+    width: 100%;
+  }
+
+  & > div:last-of-type {
+    padding: 0.5vh 1.5vw 2vh 1.5vw;
+
+    & > div:first-of-type {
+      display: flex;
+
+      font-size: 130%;
+    }
+
+    & .objetivoDiv {
+      margin: 2vh 0;
+    }
+
+    & .esportesDiv {
+      & ul {
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+      }
+    }
+  }
+}
+
+.objetivoDiv,
+.esportesDiv {
+  & > p:first-of-type {
+    font-weight: 400;
+  }
+}
+
+.objetivoDiv > p:last-of-type,
+.esportesDiv li {
+  background-color: var(--roxoEscuro);
+  color: var(--branco);
+
+  width: fit-content;
+
+  margin-top: 0.7vh;
+  padding: 0.4vw;
+
+  border-radius: var(--bordaArredondada);
+}
+
+.iconeFechar {
+  width: 1.8vw;
+  height: 1.8vw;
+
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+
+  font-size: 120%;
+
+  filter: drop-shadow(0 -1px 0px var(--branco))
+    drop-shadow(-0.5px 0 0px var(--branco));
+
+  background-color: white;
+  border-radius: 50%;
+}
+
+.acoesUsuariaCard {
+  width: var(--larguraFotoCard);
+  top: calc(var(--larguraFotoCard) - 7vh);
+  padding: 0 1.5vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  position: absolute;
+
+  & > div:last-of-type {
+    display: flex;
+    gap: 1vw;
+  }
+}
+
+.iconeDistancia {
+  background-color: var(--branco);
+
+  border-radius: var(--bordaArredondada);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  padding: .1vh .3vw;
+}
+
+.iconeChat {
+  padding: 0 0.75vw;
+
+  font-size: 170%;
+
+  background-color: var(--roxoEscuro);
+  color: var(--branco);
+
+  border: 0.1rem solid var(--branco);
+  border-radius: 50%;
+}
+
+.iconeInfo {
+  width: 4.4vw;
+  height: 4.4vw;
+
+  font-size: 300%;
+  background-color: var(--branco);
+  border-radius: 50%;
+}
+
+.iconeFechar,
+.iconeChat,
+.iconeInfo {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

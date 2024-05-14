@@ -1,6 +1,7 @@
 import "./MuralDePessoas.css";
 import { Divider } from "../../shared/components/Divider/Divider";
 import { Banner } from "./components/Banner/Banner";
+import { UsuariaCard } from "./components/UsuariaCard/UsuariaCard";
 
 export const MuralDePessoas = () => {
   return (
@@ -34,6 +35,13 @@ export const MuralDePessoas = () => {
       </header>
       <Banner />
       <Divider />
+      <section>
+        <ul>
+          <li>
+            <UsuariaCard />
+          </li>
+        </ul>
+      </section>
     </>
   );
 };

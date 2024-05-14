@@ -22,6 +22,8 @@
   --preto: #000;
 
   --bordaArredondada: 0.4rem;
+
+  --larguraFotoCard: 30vw;
 }
 
 body {
@@ -47,7 +49,7 @@ body {
 
     display: flex;
     align-items: center;
-    gap: .5vw;
+    gap: 0.5vw;
 
     & > a {
       color: white;
