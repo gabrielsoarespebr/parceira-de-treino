@@ -6,7 +6,7 @@
   border: 0.1rem solid var(--roxoEscuro);
   border-radius: var(--bordaArredondada);
 
-  & img {
+  & > div > img:last-of-type {
     width: 100%;
   }
 
@@ -56,25 +56,17 @@
 }
 
 .iconeFechar {
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 2vw;
+  height: 2vw;
 
   position: absolute;
   right: 1vh;
   top: 1vh;
-
-  font-size: 120%;
-
-  filter: drop-shadow(0 -1px 0px var(--branco))
-    drop-shadow(-0.5px 0 0px var(--branco));
-
-  background-color: white;
-  border-radius: 50%;
 }
 
 .acoesUsuariaCard {
   width: var(--larguraFotoCard);
-  top: calc(var(--larguraFotoCard) - 7vh);
+  top: calc(var(--larguraFotoCard) - 7.5vw);
   padding: 0 1.5vh;
 
   display: flex;
@@ -98,28 +90,12 @@
   align-items: center;
   gap: 0.5vw;
 
-  padding: .1vh .3vw;
+  padding: 0.1vh 0.3vw;
 }
 
-.iconeChat {
-  padding: 0 0.75vw;
-
-  font-size: 170%;
-
-  background-color: var(--roxoEscuro);
-  color: var(--branco);
-
-  border: 0.1rem solid var(--branco);
-  border-radius: 50%;
-}
-
-.iconeInfo {
-  width: 4.4vw;
-  height: 4.4vw;
-
-  font-size: 300%;
-  background-color: var(--branco);
-  border-radius: 50%;
+.iconeChat,.iconeInfo {
+  width: 6vw;
+  height: 6vw;
 }
 
 .iconeFechar,
@@ -127,7 +103,10 @@
 .iconeInfo {
   cursor: pointer;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: .4s;
+
+  &:hover{
+    transform: scale(1.1);
+    filter: brightness(1.3);
+  }
 }

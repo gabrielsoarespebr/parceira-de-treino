@@ -1,20 +1,26 @@
 import "./UsuariaCard.css";
 
+import iconeFechar from "/src/assets/icons/iconeFechar.png";
+import iconeChat from "/src/assets/icons/iconeChat.png";
+import iconeInfo from "/src/assets/icons/iconeInfo.png";
+
 export const UsuariaCard = () => {
   return (
     <div className="usuariaCard">
       <div>
-        <span className="material-icons iconeFechar">cancel</span>
+        <img src={iconeFechar} alt="ícone de fechar" className="iconeFechar" />
         <div className="acoesUsuariaCard">
           <div className="iconeDistancia">
             <i className="fa-solid fa-location-dot"></i>
             <p>10 km</p>
           </div>
           <div>
-            <div className="iconeChat">
-              <i className="fa-solid fa-comment"></i>
-            </div>
-            <span className="material-icons iconeInfo">info</span>
+            <img src={iconeChat} alt="ícone de chat" className="iconeChat" />
+            <img
+              src={iconeInfo}
+              alt="ícone de informação"
+              className="iconeInfo"
+            />
           </div>
         </div>
         <img
