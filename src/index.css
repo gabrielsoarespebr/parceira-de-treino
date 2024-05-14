@@ -30,6 +30,30 @@ body {
   font-weight: 500;
 
   background-color: var(--branco);
+  color: var(--roxoEscuro);
+}
+
+.barraDeNavegacao {
+  list-style: none;
+
+  display: flex;
+  gap: 2.5vw;
+
+  color: white;
+
+  & > li {
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+
+    & > a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 .botaoBranco,
@@ -233,39 +257,39 @@ Large (1008px and larger) */
     margin-bottom: 1vh;
   }
 
-  #rodape{
+  #rodape {
     text-align: center;
   }
 
-  #rodape img{
+  #rodape img {
     width: 80% !important;
     height: 8vh;
     align-self: center;
   }
 
-  #rodape>div{
+  #rodape > div {
     display: flex;
     flex-direction: column;
     gap: 4vh;
   }
 
-  #rodape>div>div{
+  #rodape > div > div {
     display: flex;
     flex-direction: column;
   }
 
-  #redesSociaisRodape{
+  #redesSociaisRodape {
     width: 100%;
 
     margin-bottom: 2vh;
 
-    &>li{
+    & > li {
       width: 25%;
 
       display: flex;
       justify-content: center;
 
-      &>a{
+      & > a {
         width: 4rem;
       }
     }
