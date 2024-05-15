@@ -2,12 +2,15 @@
   position: relative;
 
   width: var(--larguraFotoCard);
+  height: 100%;
 
   border: 0.1rem solid var(--roxoEscuro);
   border-radius: var(--bordaArredondada);
 
   & > div > img:last-of-type {
     width: 100%;
+
+    border-radius: var(--bordaArredondada) var(--bordaArredondada) 0 0;
   }
 
   & > div:last-of-type {
@@ -66,7 +69,7 @@
 
 .acoesUsuariaCard {
   width: var(--larguraFotoCard);
-  top: calc(var(--larguraFotoCard) - 7.5vw);
+  top: calc(var(--larguraFotoCard) - 5vw);
   padding: 0 1.5vh;
 
   display: flex;
@@ -93,9 +96,10 @@
   padding: 0.1vh 0.3vw;
 }
 
-.iconeChat,.iconeInfo {
-  width: 6vw;
-  height: 6vw;
+.iconeChat,
+.iconeInfo {
+  width: 4vw;
+  height: 4vw;
 }
 
 .iconeFechar,
@@ -103,9 +107,9 @@
 .iconeInfo {
   cursor: pointer;
 
-  transition: .4s;
+  transition: 0.4s;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     filter: brightness(1.3);
   }
