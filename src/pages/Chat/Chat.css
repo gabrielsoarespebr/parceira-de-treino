@@ -1,0 +1,159 @@
+/* header {
+  background: linear-gradient(#671C61, #a14e9a);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: .5vh 3vw .5vh 2vw;
+
+  & .marca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 1rem;
+  }
+
+  & img {
+    width: 5vw;
+    aspect-ratio: 1/1;
+  }
+} */
+
+body{
+  background-color: #ffffff;
+}
+
+.fundo{
+  background-color: #FFF4FF;
+}
+
+.fundochat{
+  background-color: #ffffff;
+}
+
+
+.container{
+  background-color: #FFF4FF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat_mensagens{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 30px 30px 90px;
+  justify-content: flex-end;
+}
+
+.chat_form{
+  background-color: #FFF4FF;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.chat_input{
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  flex-grow: 100;
+  outline: none;
+  color: #000000;
+  align-items: center;
+  font-size: 1rem;
+  background-color:#C9C9C9;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button_send{
+  border: none;
+  background: none;
+  color: #343330;
+  cursor: pointer;
+  font-size: large;
+}
+
+.button_emoji{
+  border: none;
+  background: none;
+  color: #343330;
+  cursor: pointer;
+  font-size: large;
+}
+
+.button_location{
+  border: none;
+  background: none;
+  color: #343330;
+  cursor: pointer;
+  font-size: large;
+}
+
+.imagem_Parceira{
+  width: 7vw;
+  border-radius: 10px;
+  box-shadow: 0.5px 2px 2px #901197;
+}
+
+.my_message{
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 0.9;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 15px;
+  border-radius: 10px 10px 0px 10px;
+  align-self: flex-end;
+  background-color: #befbe8ad;
+}
+
+.message_other{
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 0.9;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 15px;
+  border-radius: 0px 10px 10px 10px;
+  align-self: flex-start;
+  background-color: #e290d7ab;
+}
+
+.message_sender{
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #5a0e52;
+}
+
+/* .container1{
+  background-color: #ECFDFA;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+} */
+
+
+
+
+
+
+
+

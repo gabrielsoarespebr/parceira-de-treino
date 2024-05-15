@@ -1,10 +1,10 @@
 import "./App.css";
-import { Homepage } from "./pages/Homepage/Homepage";
+import { Chat } from "./pages/Chat/Chat";
 
 function App() {
   return (
     <>
-      <Homepage></Homepage>
+      <Chat></Chat>
     </>
   );
 }
