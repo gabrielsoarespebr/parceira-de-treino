@@ -3,14 +3,15 @@ import "./UsuariaCard.css";
 import iconeFechar from "/src/assets/icons/iconeFechar.png";
 import iconeChat from "/src/assets/icons/iconeChat.png";
 import iconeInfo from "/src/assets/icons/iconeInfo.png";
+import { useState } from "react";
 
-export const UsuariaCard = ({
-  fotoPerfilUrl,
-  nome,
-  dataNascimento,
-  objetivo,
-  esportes,
-}) => {
+export const UsuariaCard = ({ usuaria }) => {
+  const [fotoPerfilUrl, setFotoPerfilUrl] = useState(usuaria.fotoPerfilUrl);
+  const [nome, setNome] = useState(usuaria.nome);
+  const [dataNascimento, setDataNascimento] = useState(usuaria.dataNascimento);
+  const [objetivo, setObjetivo] = useState(usuaria.objetivo);
+  const [esportes, setEsportes] = useState(usuaria.esportes);
+  
   // IDADE - começo
   const dataNasc = new Date(dataNascimento);
 

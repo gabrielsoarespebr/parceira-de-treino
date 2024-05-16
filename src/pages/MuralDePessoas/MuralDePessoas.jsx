@@ -41,11 +41,7 @@ export const MuralDePessoas = () => {
           {Usuarias.map((usuaria, id) => (
             <li key={id}>
               <UsuariaCard
-                fotoPerfilUrl={usuaria.fotoPerfilUrl}
-                nome={usuaria.nome}
-                dataNascimento={usuaria.dataNascimento}
-                objetivo={usuaria.objetivo}
-                esportes={usuaria.esportes}
+                usuaria={usuaria}
               />
             </li>
           ))}
