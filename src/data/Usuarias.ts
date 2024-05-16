@@ -2,6 +2,7 @@ import { Usuaria } from "./interfaces/Usuaria";
 
 export const Usuarias: Usuaria[] = [
   {
+    id: 1,
     nome: "Brenda",
     sobrenome: "Silva",
     cpf: "123.456.789-00",
@@ -18,6 +19,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura123",
   },
   {
+    id: 2,
     nome: "Jéssica",
     sobrenome: "Oliveira",
     cpf: "223.456.789-00",
@@ -34,6 +36,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura456",
   },
   {
+    id: 3,
     nome: "Laura",
     sobrenome: "Martins",
     cpf: "323.456.789-00",
@@ -50,6 +53,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura789",
   },
   {
+    id: 4,
     nome: "Teresa",
     sobrenome: "Costa",
     cpf: "423.456.789-00",
@@ -66,6 +70,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura101",
   },
   {
+    id: 5,
     nome: "Camila",
     sobrenome: "Almeida",
     cpf: "523.456.789-00",
@@ -82,6 +87,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura202",
   },
   {
+    id: 6,
     nome: "Bia",
     sobrenome: "Santos",
     cpf: "623.456.789-00",
@@ -98,6 +104,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura303",
   },
   {
+    id: 7,
     nome: "Rebeca",
     sobrenome: "Pereira",
     cpf: "723.456.789-00",
@@ -114,6 +121,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura404",
   },
   {
+    id: 8,
     nome: "Sandra",
     sobrenome: "Lima",
     cpf: "823.456.789-00",
@@ -130,6 +138,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura505",
   },
   {
+    id: 9,
     nome: "Nori",
     sobrenome: "Yamamoto",
     cpf: "923.456.789-00",
@@ -146,6 +155,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura606",
   },
   {
+    id: 10,
     nome: "Débora",
     sobrenome: "Rocha",
     cpf: "103.456.789-00",
@@ -162,6 +172,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura707",
   },
   {
+    id: 11,
     nome: "Gabi",
     sobrenome: "Fernandes",
     cpf: "113.456.789-00",
@@ -178,6 +189,7 @@ export const Usuarias: Usuaria[] = [
     senha: "senhaSegura808",
   },
   {
+    id: 12,
     nome: "Manu",
     sobrenome: "Gonçalves",
     cpf: "123.456.789-01",

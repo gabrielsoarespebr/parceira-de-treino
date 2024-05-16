@@ -1,4 +1,5 @@
 export interface Usuaria {
+  id: number;
   nome: string;
   sobrenome: string;
   cpf: string;
