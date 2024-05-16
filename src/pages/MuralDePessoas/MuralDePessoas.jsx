@@ -3,8 +3,35 @@ import { Divider } from "../../shared/components/Divider/Divider";
 import { Banner } from "./components/Banner/Banner";
 import { UsuariaCard } from "./components/UsuariaCard/UsuariaCard";
 import { Usuarias } from "../../data/Usuarias";
+import { useEffect, useState } from "react";
 
 export const MuralDePessoas = () => {
+  const [usuariasLista, setUsuariasLista] = useState([]);
+
+  localStorage.setItem("usuariasLista", JSON.stringify(Usuarias));
+
+  let lista = JSON.parse(localStorage.getItem("usuariasLista"));
+
+  useEffect(() => {
+    AtualizarListaLocalStorage();
+  }, []);
+
+  const AtualizarListaLocalStorage = () => {
+    setUsuariasLista(JSON.parse(localStorage.getItem("usuariasLista")));
+  };
+
+  const ModificarListaLocalStorage = (id) => {
+    lista = JSON.parse(localStorage.getItem("usuariasLista"));
+
+    const indexUsuariaOcultar = id - 1;
+
+    lista.splice(indexUsuariaOcultar, 1);
+
+    localStorage.setItem("usuariasLista", JSON.stringify(lista));
+
+    AtualizarListaLocalStorage();
+  };
+
   return (
     <>
       <header>
@@ -38,11 +65,9 @@ export const MuralDePessoas = () => {
       <Divider />
       <section id="muralDePessoas">
         <ul>
-          {Usuarias.map((usuaria, id) => (
+          {usuariasLista.map((usuaria, id) => (
             <li key={id}>
-              <UsuariaCard
-                usuaria={usuaria}
-              />
+              <UsuariaCard usuaria={usuaria} ModificarListaLocalStorage={ModificarListaLocalStorage} />
             </li>
           ))}
         </ul>
