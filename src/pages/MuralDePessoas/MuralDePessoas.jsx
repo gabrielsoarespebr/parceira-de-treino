@@ -4,6 +4,7 @@ import { Banner } from "./components/Banner/Banner";
 import { UsuariaCard } from "./components/UsuariaCard/UsuariaCard";
 import { Usuarias } from "../../data/Usuarias";
 import { useEffect, useState } from "react";
+import { Footer } from "./components/Footer/Footer";
 
 export const MuralDePessoas = () => {
   const [usuariasLista, setUsuariasLista] = useState([]);
@@ -67,11 +68,16 @@ export const MuralDePessoas = () => {
         <ul>
           {usuariasLista.map((usuaria, id) => (
             <li key={id}>
-              <UsuariaCard usuaria={usuaria} ModificarListaLocalStorage={ModificarListaLocalStorage} />
+              <UsuariaCard
+                usuaria={usuaria}
+                ModificarListaLocalStorage={ModificarListaLocalStorage}
+              />
             </li>
           ))}
         </ul>
       </section>
+      <Divider />
+      <Footer />
     </>
   );
 };
