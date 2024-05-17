@@ -11,3 +11,35 @@
     gap: 2vw;
   }
 }
+
+#filtroEOrdem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 5vh;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1vw;
+
+    & > select {
+      width: 18vw;
+
+      background-color: var(--roxoTranslucido);
+      color: var(--roxoEscuro);
+
+      border: 0.1rem solid var(--roxoEscuro);
+      border-radius: var(--bordaArredondada);
+
+      padding: 0.5vh 0.5vw;
+
+      font-weight: bold;
+
+      outline: none;
+    }
+  }
+}
