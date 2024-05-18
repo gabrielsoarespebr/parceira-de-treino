@@ -5,7 +5,7 @@ import iconeChat from "/src/assets/icons/iconeChat.png";
 import iconeInfo from "/src/assets/icons/iconeInfo.png";
 import { useState } from "react";
 
-export const UsuariaCard = ({ usuaria, ModificarListaLocalStorage }) => {
+export const UsuariaCard = ({ usuaria }) => {
   const [id, setId] = useState(usuaria.id);
   const [fotoPerfilUrl, setFotoPerfilUrl] = useState(usuaria.fotoPerfilUrl);
   const [nome, setNome] = useState(usuaria.nome);
@@ -148,7 +148,7 @@ export const UsuariaCard = ({ usuaria, ModificarListaLocalStorage }) => {
   return (
     <div className="usuariaCard">
       <div>
-        <img src={iconeFechar} alt="ícone de fechar" className="iconeFechar" onClick={() => ModificarListaLocalStorage(id)} />
+        <img src={iconeFechar} alt="ícone de fechar" className="iconeFechar" />
         <div className="acoesUsuariaCard">
           <div className="iconeDistancia">
             <i className="fa-solid fa-location-dot"></i>

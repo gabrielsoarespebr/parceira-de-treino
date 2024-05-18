@@ -7,31 +7,27 @@ import { useEffect, useState } from "react";
 import { Footer } from "./components/Footer/Footer";
 
 export const MuralDePessoas = () => {
-  const [usuariasLista, setUsuariasLista] = useState([]);
+  const [usuariasLista, setUsuariasLista] = useState(Usuarias);
 
-  localStorage.setItem("usuariasLista", JSON.stringify(Usuarias));
-
-  let lista = JSON.parse(localStorage.getItem("usuariasLista"));
+  // FILTRO POR OBJETIVO - começo
+  const [filtroObjetivo, setFiltroObjetivo] = useState(0);
 
   useEffect(() => {
-    AtualizarListaLocalStorage();
-  }, []);
+    if (filtroObjetivo > 0) {
+      const usuariasListaAtualizada = Usuarias.filter(
+        (usuaria) => usuaria.objetivo === filtroObjetivo
+      );
 
-  const AtualizarListaLocalStorage = () => {
-    setUsuariasLista(JSON.parse(localStorage.getItem("usuariasLista")));
+      setUsuariasLista(usuariasListaAtualizada);
+    } else {
+      setUsuariasLista(Usuarias);
+    }
+  }, [filtroObjetivo]);
+
+  const FiltrarPorObjetivo = (event) => {
+    setFiltroObjetivo(Number(event.target.value));
   };
-
-  const ModificarListaLocalStorage = (id) => {
-    lista = JSON.parse(localStorage.getItem("usuariasLista"));
-
-    const indexUsuariaOcultar = id - 1;
-
-    lista.splice(indexUsuariaOcultar, 1);
-
-    localStorage.setItem("usuariasLista", JSON.stringify(lista));
-
-    AtualizarListaLocalStorage();
-  };
+  // FILTRO POR OBJETIVO - fim
 
   return (
     <>
@@ -68,8 +64,12 @@ export const MuralDePessoas = () => {
         <div id="filtroEOrdem">
           <div>
             <p>Filtrar por</p>
-            <select name="usuariaFiltroObjetivo" id="usuariaFiltroObjetivo">
-              <option value="">(Escolha o objetivo)</option>
+            <select
+              name="usuariaFiltroObjetivo"
+              id="usuariaFiltroObjetivo"
+              onChange={FiltrarPorObjetivo}
+            >
+              <option value="0">(Escolha o objetivo)</option>
               <option value="1">Ganhar músculo</option>
               <option value="2">Perder peso</option>
               <option value="3">Vida Saudável</option>
@@ -78,7 +78,7 @@ export const MuralDePessoas = () => {
             </select>
 
             <select name="usuariaFiltroEsporte" id="usuariaFiltroEsporte">
-              <option value="">(Escolha o esporte)</option>
+              <option value="0">(Escolha o esporte)</option>
               <option value="1">Musculação</option>
               <option value="2">Crossfit</option>
               <option value="3">Corrida</option>
@@ -108,8 +108,8 @@ export const MuralDePessoas = () => {
           </div>
           <div>
             <p>Ordenar por</p>
-            <select name="usuariaFiltroObjetivo" id="usuariaFiltroObjetivo">
-              <option value="">(Escolha a ordem)</option>
+            <select name="usuariaOrdem" id="usuariaOrdem">
+              <option value="0">(Escolha a ordem)</option>
               <option value="1">Distância (mais perto)</option>
               <option value="2">Distância (mais longe)</option>
               <option value="3">Idade (mais jovem)</option>
@@ -118,12 +118,9 @@ export const MuralDePessoas = () => {
           </div>
         </div>
         <ul>
-          {usuariasLista.map((usuaria, id) => (
-            <li key={id}>
-              <UsuariaCard
-                usuaria={usuaria}
-                ModificarListaLocalStorage={ModificarListaLocalStorage}
-              />
+          {usuariasLista.map((usuaria) => (
+            <li key={usuaria.id}>
+              <UsuariaCard usuaria={usuaria} />
             </li>
           ))}
         </ul>
