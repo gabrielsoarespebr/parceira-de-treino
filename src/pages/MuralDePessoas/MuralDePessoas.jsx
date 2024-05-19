@@ -13,10 +13,20 @@ export const MuralDePessoas = () => {
   const [filtroObjetivo, setFiltroObjetivo] = useState(0);
 
   useEffect(() => {
-    if (filtroObjetivo > 0) {
-      const usuariasListaAtualizada = Usuarias.filter(
-        (usuaria) => usuaria.objetivo === filtroObjetivo
-      );
+    let usuariasListaAtualizada = [];
+
+    if (filtroObjetivo > 0 || filtroEsporte > 0) {
+      if (filtroEsporte > 0) {
+        usuariasListaAtualizada = Usuarias.filter((usuaria) =>
+          usuaria.esportes.includes(filtroEsporte)
+        );
+      }
+
+      if (filtroObjetivo > 0) {
+        usuariasListaAtualizada = Usuarias.filter(
+          (usuaria) => usuaria.objetivo === filtroObjetivo
+        );
+      }
 
       setUsuariasLista(usuariasListaAtualizada);
     } else {
@@ -28,6 +38,36 @@ export const MuralDePessoas = () => {
     setFiltroObjetivo(Number(event.target.value));
   };
   // FILTRO POR OBJETIVO - fim
+
+  // FILTRO POR ESPORTE - começo
+  const [filtroEsporte, setFiltroEsporte] = useState(0);
+
+  useEffect(() => {
+    let usuariasListaAtualizada = [];
+
+    if (filtroObjetivo > 0 || filtroEsporte > 0) {
+      if (filtroObjetivo > 0) {
+        usuariasListaAtualizada = Usuarias.filter(
+          (usuaria) => usuaria.objetivo === filtroObjetivo
+        );
+      }
+
+      if (filtroEsporte > 0) {
+        usuariasListaAtualizada = Usuarias.filter((usuaria) =>
+          usuaria.esportes.includes(filtroEsporte)
+        );
+      }
+
+      setUsuariasLista(usuariasListaAtualizada);
+    } else {
+      setUsuariasLista(Usuarias);
+    }
+  }, [filtroEsporte]);
+
+  const FiltrarPorEsporte = (event) => {
+    setFiltroEsporte(Number(event.target.value));
+  };
+  // FILTRO POR ESPORTE - fim
 
   return (
     <>
@@ -77,7 +117,11 @@ export const MuralDePessoas = () => {
               <option value="5">Competir</option>
             </select>
 
-            <select name="usuariaFiltroEsporte" id="usuariaFiltroEsporte">
+            <select
+              name="usuariaFiltroEsporte"
+              id="usuariaFiltroEsporte"
+              onChange={FiltrarPorEsporte}
+            >
               <option value="0">(Escolha o esporte)</option>
               <option value="1">Musculação</option>
               <option value="2">Crossfit</option>
