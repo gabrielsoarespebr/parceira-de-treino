@@ -69,6 +69,41 @@ export const MuralDePessoas = () => {
   };
   // FILTRO POR ESPORTE - fim
 
+  // ORDERNAR POR IDADE - começo
+  const [ordem, setOrdem] = useState(0);
+
+  useEffect(() => {
+    let usuariasListaOrdenada = [...usuariasLista];
+
+    switch (ordem) {
+      case 1:
+        console.log("caso 1");
+        break;
+      case 2:
+        console.log("caso 2");
+        break;
+      case 3:
+        usuariasListaOrdenada.sort(
+          (a, b) => new Date(b.dataNascimento) - new Date(a.dataNascimento)
+        );
+        setUsuariasLista(usuariasListaOrdenada);
+        break;
+      case 4:
+        usuariasListaOrdenada.sort(
+          (a, b) => new Date(a.dataNascimento) - new Date(b.dataNascimento)
+        );
+        setUsuariasLista(usuariasListaOrdenada);
+        break;
+      default:
+        break;
+    }
+  }, [ordem]);
+
+  const Ordenar = (event) => {
+    setOrdem(Number(event.target.value));
+  };
+  // ORDERNAR POR IDADE - fim
+
   return (
     <>
       <header>
@@ -152,7 +187,7 @@ export const MuralDePessoas = () => {
           </div>
           <div>
             <p>Ordenar por</p>
-            <select name="usuariaOrdem" id="usuariaOrdem">
+            <select name="usuariaOrdem" id="usuariaOrdem" onChange={Ordenar}>
               <option value="0">(Escolha a ordem)</option>
               <option value="1">Distância (mais perto)</option>
               <option value="2">Distância (mais longe)</option>
