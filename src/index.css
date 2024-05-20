@@ -237,7 +237,7 @@ Small (smaller than 640px)
 Medium (641px to 1007px)
 Large (1008px and larger) */
 
-@media (max-width: 1007px) {
+@media (max-width: 740px) {
   .barraDeNavegacao > li > a > p {
     display: none;
   }
