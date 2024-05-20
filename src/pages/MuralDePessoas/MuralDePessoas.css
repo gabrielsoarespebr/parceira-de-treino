@@ -43,3 +43,22 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  #filtroEOrdem {
+    flex-direction: column;
+    gap: 3vh;
+
+    & > div {
+      flex-direction: column;
+
+      & > select {
+        width: 70vw;
+        
+        &> option{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
