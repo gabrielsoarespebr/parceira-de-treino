@@ -13,10 +13,20 @@ export const MuralDePessoas = () => {
   const [filtroObjetivo, setFiltroObjetivo] = useState(0);
 
   useEffect(() => {
-    if (filtroObjetivo > 0) {
-      const usuariasListaAtualizada = Usuarias.filter(
-        (usuaria) => usuaria.objetivo === filtroObjetivo
-      );
+    let usuariasListaAtualizada = [];
+
+    if (filtroObjetivo > 0 || filtroEsporte > 0) {
+      if (filtroEsporte > 0) {
+        usuariasListaAtualizada = Usuarias.filter((usuaria) =>
+          usuaria.esportes.includes(filtroEsporte)
+        );
+      }
+
+      if (filtroObjetivo > 0) {
+        usuariasListaAtualizada = Usuarias.filter(
+          (usuaria) => usuaria.objetivo === filtroObjetivo
+        );
+      }
 
       setUsuariasLista(usuariasListaAtualizada);
     } else {
@@ -29,6 +39,71 @@ export const MuralDePessoas = () => {
   };
   // FILTRO POR OBJETIVO - fim
 
+  // FILTRO POR ESPORTE - começo
+  const [filtroEsporte, setFiltroEsporte] = useState(0);
+
+  useEffect(() => {
+    let usuariasListaAtualizada = [];
+
+    if (filtroObjetivo > 0 || filtroEsporte > 0) {
+      if (filtroObjetivo > 0) {
+        usuariasListaAtualizada = Usuarias.filter(
+          (usuaria) => usuaria.objetivo === filtroObjetivo
+        );
+      }
+
+      if (filtroEsporte > 0) {
+        usuariasListaAtualizada = Usuarias.filter((usuaria) =>
+          usuaria.esportes.includes(filtroEsporte)
+        );
+      }
+
+      setUsuariasLista(usuariasListaAtualizada);
+    } else {
+      setUsuariasLista(Usuarias);
+    }
+  }, [filtroEsporte]);
+
+  const FiltrarPorEsporte = (event) => {
+    setFiltroEsporte(Number(event.target.value));
+  };
+  // FILTRO POR ESPORTE - fim
+
+  // ORDERNAR POR IDADE - começo
+  const [ordem, setOrdem] = useState(0);
+
+  useEffect(() => {
+    let usuariasListaOrdenada = [...usuariasLista];
+
+    switch (ordem) {
+      case 1:
+        console.log("caso 1");
+        break;
+      case 2:
+        console.log("caso 2");
+        break;
+      case 3:
+        usuariasListaOrdenada.sort(
+          (a, b) => new Date(b.dataNascimento) - new Date(a.dataNascimento)
+        );
+        setUsuariasLista(usuariasListaOrdenada);
+        break;
+      case 4:
+        usuariasListaOrdenada.sort(
+          (a, b) => new Date(a.dataNascimento) - new Date(b.dataNascimento)
+        );
+        setUsuariasLista(usuariasListaOrdenada);
+        break;
+      default:
+        break;
+    }
+  }, [ordem]);
+
+  const Ordenar = (event) => {
+    setOrdem(Number(event.target.value));
+  };
+  // ORDERNAR POR IDADE - fim
+
   return (
     <>
       <header>
@@ -40,20 +115,28 @@ export const MuralDePessoas = () => {
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <i className="fa-solid fa-circle-user"></i>
-              <a href="">Meu perfil</a>
+              <a href="">
+                <i className="fa-solid fa-circle-user"></i>
+                <p>Meu perfil</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-comments"></i>
-              <a href="">Chat</a>
+              <a href="">
+                <i className="fa-solid fa-comments"></i>
+                <p>Chat</p>
+              </a>
             </li>
             <li>
-              <span className="material-icons">sports</span>
-              <a href="">Profissionais</a>
+              <a href="">
+                <span className="material-icons">sports</span>
+                <p>Profissionais</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-right-to-bracket"></i>
-              <a href="">Sair</a>
+              <a href="">
+                <i className="fa-solid fa-right-to-bracket"></i>
+                <p>Sair</p>
+              </a>
             </li>
           </ul>
         </nav>
@@ -77,7 +160,11 @@ export const MuralDePessoas = () => {
               <option value="5">Competir</option>
             </select>
 
-            <select name="usuariaFiltroEsporte" id="usuariaFiltroEsporte">
+            <select
+              name="usuariaFiltroEsporte"
+              id="usuariaFiltroEsporte"
+              onChange={FiltrarPorEsporte}
+            >
               <option value="0">(Escolha o esporte)</option>
               <option value="1">Musculação</option>
               <option value="2">Crossfit</option>
@@ -108,7 +195,7 @@ export const MuralDePessoas = () => {
           </div>
           <div>
             <p>Ordenar por</p>
-            <select name="usuariaOrdem" id="usuariaOrdem">
+            <select name="usuariaOrdem" id="usuariaOrdem" onChange={Ordenar}>
               <option value="0">(Escolha a ordem)</option>
               <option value="1">Distância (mais perto)</option>
               <option value="2">Distância (mais longe)</option>

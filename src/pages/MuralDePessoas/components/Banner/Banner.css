@@ -44,8 +44,20 @@
   }
 }
 
+@media (max-width: 740px) {
+  #bannerMuralDePessoas > div {
+    & > p:first-of-type {
+      font-size: 140%;
+    }
+
+    & > p:last-of-type {
+      font-size: 190%;
+    }
+  }
+}
+
 @media (max-width: 430px) {
-  #banner {
+  #bannerMuralDePessoas {
     display: flex;
     justify-content: center;
 
@@ -56,6 +68,7 @@
       width: auto;
       text-align: center;
 
+      padding-top: 4vh;
       padding-bottom: 4vh;
     }
 
