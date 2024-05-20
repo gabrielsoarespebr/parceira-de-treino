@@ -115,20 +115,28 @@ export const MuralDePessoas = () => {
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <i className="fa-solid fa-circle-user"></i>
-              <a href="">Meu perfil</a>
+              <a href="">
+                <i className="fa-solid fa-circle-user"></i>
+                <p>Meu perfil</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-comments"></i>
-              <a href="">Chat</a>
+              <a href="">
+                <i className="fa-solid fa-comments"></i>
+                <p>Chat</p>
+              </a>
             </li>
             <li>
-              <span className="material-icons">sports</span>
-              <a href="">Profissionais</a>
+              <a href="">
+                <span className="material-icons">sports</span>
+                <p>Profissionais</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-right-to-bracket"></i>
-              <a href="">Sair</a>
+              <a href="">
+                <i className="fa-solid fa-right-to-bracket"></i>
+                <p>Sair</p>
+              </a>
             </li>
           </ul>
         </nav>
