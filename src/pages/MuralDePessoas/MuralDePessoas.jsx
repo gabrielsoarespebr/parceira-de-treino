@@ -104,6 +104,22 @@ export const MuralDePessoas = () => {
   };
   // ORDERNAR POR IDADE - fim
 
+  // OCULTAR USUÁRIA - começo
+  const [idUsuariasOcultas, setIdUsuariasOcultas] = useState([]);
+
+  useEffect(() => {
+    let usuariasListaAtualizada = Usuarias.filter(
+      (usuaria) => !idUsuariasOcultas.includes(usuaria.id)
+    );
+
+    setUsuariasLista(usuariasListaAtualizada);
+  }, [idUsuariasOcultas]);
+
+  const OcultarUsuaria = (id) => {
+    setIdUsuariasOcultas([...idUsuariasOcultas, id]);
+  };
+  // OCULTAR USUÁRIA - fim
+
   return (
     <>
       <header>
@@ -207,7 +223,7 @@ export const MuralDePessoas = () => {
         <ul>
           {usuariasLista.map((usuaria) => (
             <li key={usuaria.id}>
-              <UsuariaCard usuaria={usuaria} />
+              <UsuariaCard usuaria={usuaria} OcultarUsuaria={OcultarUsuaria} />
             </li>
           ))}
         </ul>
