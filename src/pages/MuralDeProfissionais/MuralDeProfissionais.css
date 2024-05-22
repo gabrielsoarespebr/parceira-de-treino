@@ -1,0 +1,72 @@
+#muralDeProfissionais {
+  padding: 4vh 4vw;
+
+  & > ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 2vw;
+  }
+}
+
+#filtroProfissao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 5vh;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1vw;
+
+    & > select {
+      width: 18vw;
+
+      background-color: var(--roxoTranslucido);
+      color: var(--roxoEscuro);
+
+      border: 0.1rem solid var(--roxoEscuro);
+      border-radius: var(--bordaArredondada);
+
+      padding: 0.5vh 0.5vw;
+
+      font-weight: bold;
+
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #filtroProfissao {
+    flex-direction: column;
+    gap: 3vh;
+
+    & > div {
+      flex-direction: column;
+
+      & > select {
+        width: 70vw;
+        
+        &> option{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 430px) {
+  #muralDeProfissionais > ul {
+      justify-content: center;
+      gap: 3vh;
+    }
+}

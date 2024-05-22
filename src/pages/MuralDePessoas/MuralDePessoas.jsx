@@ -143,7 +143,7 @@ export const MuralDePessoas = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/muraldeprofissionais">
                 <span className="material-icons">sports</span>
                 <p>Profissionais</p>
               </a>
