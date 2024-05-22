@@ -4,12 +4,12 @@ export const Banner = () => {
   return (
     <div id="bannerMuralDePessoas">
       <div>
-        <p className="fonteTitulo textoMaiusculo">Juntas somos</p>
-        <p className="fonteTitulo textoMaiusculo">Mais fortes!</p>
+        <p className="fonteTitulo textoMaiusculo">Conte com</p>
+        <p className="fonteTitulo textoMaiusculo">As melhores!</p>
       </div>
       <img
-        src="./src/assets/image/duplaParceiras3.jpg"
-        alt="Parceiras de treino sorrindo enquanto treinam"
+        src="./src/assets/image/profissionais2.jpg"
+        alt="Profissionais sorrindo"
       />
     </div>
   );
