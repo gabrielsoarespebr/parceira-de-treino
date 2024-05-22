@@ -3,11 +3,30 @@ import { Divider } from "../../shared/components/Divider/Divider";
 import { Banner } from "./components/Banner/Banner";
 import { ProfissionalCard } from "./components/ProfissionalCard/ProfissionalCard";
 import { Profissionais } from "../../data/Profissionais";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Footer } from "./components/Footer/Footer";
 
 export const MuralDeProfissionais = () => {
-  const [profissionaisLista, setprofissionaisLista] = useState(Profissionais);
+  const [profissionaisLista, setProfissionaisLista] = useState(Profissionais);
+
+  // FILTRO POR PROFISSÃO - começo
+  const [filtroProfissao, setFiltroProfissao] = useState(0);
+
+  useEffect(() => {
+    let profissionaisListaAtualizada = [];
+
+    if (filtroProfissao > 0) {
+      profissionaisListaAtualizada = Profissionais.filter(
+        (profissional) => profissional.profissao === filtroProfissao
+      );
+      setProfissionaisLista(profissionaisListaAtualizada);
+    } else setProfissionaisLista(Profissionais);
+  }, [filtroProfissao]);
+
+  const FiltrarPorProfissao = (event) => {
+    setFiltroProfissao(Number(event.target.value));
+  };
+  // FILTRO POR PROFISSÃO - fim
 
   return (
     <>
@@ -55,6 +74,7 @@ export const MuralDeProfissionais = () => {
             <select
               name="profissionalFiltroProfissao"
               id="profissionalFiltroProfissao"
+              onChange={FiltrarPorProfissao}
             >
               <option value="0">(Escolha a profissão)</option>
               <option value="1">Personal trainer</option>
