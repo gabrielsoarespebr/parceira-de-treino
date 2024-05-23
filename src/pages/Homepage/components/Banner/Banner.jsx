@@ -7,7 +7,7 @@ export const Banner = () => {
         <p className="fonteTitulo textoMaiusculo">Nunca foi tão fácil</p>
         <p className="fonteTitulo textoMaiusculo">Encontrar uma</p>
         <p className="fonteTitulo textoMaiusculo">Parceira de treino</p>
-        <button className="botaoRoxo">Cadastre-se agora</button>
+        <a href="/cadastrousuaria" className="botaoRoxo">Cadastre-se agora</a>
       </div>
       <img
         src="./src/assets/image/duplaParceiras1.jpg"

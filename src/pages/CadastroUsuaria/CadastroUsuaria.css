@@ -1,0 +1,104 @@
+#voltarParaHomepage {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
+}
+
+.cadastroUsuaria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../../assets/image/fundoTexturaRoxoTranslucido.png");
+}
+
+#etapaNumeroLista {
+  width: 70vw;
+  list-style: none;
+
+  margin: 4vh 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.etapa {
+  width: 70vw;
+
+  padding: 5vw;
+  margin-bottom: 10vh;
+  background-color: var(--branco);
+
+  border: 0.1rem solid var(--roxoEscuro);
+  border-radius: var(--bordaArredondada);
+
+  box-shadow: 0px 0px 15px rgb(161, 161, 161);
+
+  & > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+  }
+}
+
+#etapaZero {
+  & img {
+    width: 32vw;
+
+    border-radius: var(--bordaArredondada);
+  }
+
+  & ol {
+    padding-left: 2vw;
+    margin: 3vh 0 6vh 0;
+
+    & li {
+      margin-bottom: 1.2vh;
+    }
+  }
+}
+
+.botoesDiv {
+  display: flex;
+  justify-content: space-between;
+
+  & > a,
+  > button:first-of-type {
+    width: 20%;
+    text-align: center;
+
+    background-color: var(--roxoMedio);
+
+    text-decoration: none;
+
+    padding: 1vh 2vw;
+  }
+
+  & > button:last-of-type {
+    width: 75%;
+    cursor: pointer;
+
+    background-color: var(--roxoEscuro);
+
+    outline: none;
+    border: none;
+
+    font-weight: inherit;
+
+    padding: 1vh 2vw;
+  }
+}
+
+.botao {
+  border-radius: var(--bordaArredondada);
+
+  color: var(--branco);
+
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
