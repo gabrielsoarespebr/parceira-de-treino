@@ -65,7 +65,7 @@ export function VisaoPerfil(){
 
 
           <h3 className="informacoes">Informações detinada a Sister de Jéssica</h3>
-          <div className="RedesSociais">
+          
               <div className="Instagram">
                 <img className="SimboloInsta" src={iconeInstagram} alt="logoInsta" />
               </div>  
@@ -80,7 +80,7 @@ export function VisaoPerfil(){
                 <img className="ImagemWpp" src={iconeWhatsapp} alt="logoWhatsapp" />
               </div>
                     <h5 className="wpp">(81) 98877-6655</h5>
-          </div>
+          
       </div>
 
 

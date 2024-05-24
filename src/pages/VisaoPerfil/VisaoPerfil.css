@@ -238,23 +238,72 @@
     margin-top: -180px;
 }
 
+
 .insta{
     color: #6E6E6E;
-    margin-left: 490px;
-    margin-top: 15px;
+    margin-left: 550px;
+    margin-top: -25px;
     filter: blur(2px);
 }
 
 .X{
     color: #6E6E6E;
-    margin-left: 490px;
-    margin-top: 15px;
+    margin-left: 550px;
+    margin-top: -15px;
     filter: blur(2px);
 }
 
 .wpp{
     color: #6E6E6E;
-    margin-left: 490px;
-    margin-top: 15px;
+    margin-left: 550px;
+    margin-top: -10px;
     filter: blur(2px);
+}
+
+.LogoWpp{
+    background-color: #BB529F;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ImagemWpp{
+    width: 28px;
+    
+}
+
+.logoX{
+    background-color: #BB529F;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    margin-left: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SimboloX{
+    width: 28px; 
+}
+
+.Instagram{
+    background-color: #BB529F;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.SimboloInsta{
+    width: 28px; 
 }
