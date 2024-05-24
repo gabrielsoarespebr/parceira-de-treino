@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./PaginaLogin.css";
 import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
-
+import { Footer } from "../Homepage/components/Footer/Footer";
 
 function PaginaLogin(){
 
@@ -17,6 +17,7 @@ function PaginaLogin(){
           alt="Logotipo FitSister"
           id="logoHeader"
         />
+        <a href="" className="voltar">Voltar para a Homepage</a>
       </header>
     
     <div className="container"> 
@@ -60,6 +61,8 @@ function PaginaLogin(){
           </div>
         </div>
         </div>
+      
+        <Footer/>
         </>
     );
   };

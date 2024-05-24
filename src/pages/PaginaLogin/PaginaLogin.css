@@ -198,7 +198,7 @@
   color: #cd41a5;
   position:relative;
   width: 50%;
-  height: 90;
+  height: 90%;
   margin: 99px;
 }
 
@@ -212,4 +212,9 @@
   padding: 15px;
   transform: translate(20%);
   border-radius: 10%;
+}
+
+.voltar{
+  color: white;
+  font-size: 99%;
 }
