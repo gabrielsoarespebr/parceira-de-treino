@@ -3,11 +3,22 @@ import { useState } from "react";
 import "./PaginaLogin.css";
 
 function PaginaLogin(){
+
   const[email, setEmail] = useState("")
   const[Password, setPassword] = useState("")
+
     return (
+
+    //  <header>
+    //   <img
+    //     src="./src/assets/image/logoBranco.png"
+    //     alt="Logotipo FitSister"
+    //     id="logoHeader"
+    //   />
+    // </header>
+
       <div className="container">
-        <div className="container-login">
+       <div className="container-login">
           <div className="wrap-login">
             <form className="login-form">
 
@@ -39,6 +50,8 @@ function PaginaLogin(){
                 <a href="" className="criarconta2">Se cadastre</a>
               </div>
             </form>
+
+         
 
           </div>
 
