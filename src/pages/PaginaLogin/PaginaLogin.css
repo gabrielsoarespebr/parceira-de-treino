@@ -5,8 +5,13 @@
 }
 
 .container{
-  width: 100%;
-  margin: 0 auto;
+
+  background-image: url('../../assets/image/fundoTexturaRoxo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+
 }
 
 .container-login{
@@ -15,9 +20,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:right;
+  justify-content:center;
   padding: 15px;
-  background-image: url('../../assets/image/fundoTexturaRoxo.png');
+  transform: translate(20%);
+  
 }
 
 .wrap-login{
@@ -194,4 +200,16 @@
   width: 50%;
   height: 90;
   margin: 99px;
+}
+
+#imagemmulher{
+
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+  padding: 15px;
+  transform: translate(20%);
+  border-radius: 10%;
 }
