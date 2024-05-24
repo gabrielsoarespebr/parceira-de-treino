@@ -3,10 +3,10 @@ import { IoIosSend } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmojiEmotions } from "react-icons/md";
 import parceira3Laura from "/src/assets/image/parceira3Laura.png";
-import { Footer } from "./Footer/Footer";
 
 
 export const Chat = () => {
+  
   return (
     <>
       <header>
