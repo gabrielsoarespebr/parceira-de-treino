@@ -10,7 +10,15 @@ function PaginaLogin(){
   const[password, setPassword] = useState("")
 
     return (
-
+      <>
+      <header>
+      <img
+          src="./src/assets/image/logoBranco.png"
+          alt="Logotipo FitSister"
+          id="logoHeader"
+        />
+      </header>
+    
     <div className="container"> 
        <img src={mulheresLogin} alt="mulheresexercitando" title="mulheres exerciando" id="imagemmulher"></img>
 
@@ -52,8 +60,8 @@ function PaginaLogin(){
           </div>
         </div>
         </div>
-  
-    )
-  }
+        </>
+    );
+  };
 
   export default PaginaLogin
