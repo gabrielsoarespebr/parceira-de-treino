@@ -87,7 +87,7 @@
         flex-direction: column;
         align-items: center;
 
-        & p{
+        & p {
           text-align: center;
 
           font-size: 80%;
@@ -102,6 +102,62 @@
 
           margin-top: 1vh;
         }
+      }
+    }
+  }
+}
+
+#etapaCadastroUsuariaDois {
+  & fieldset {
+    border: 0;
+
+    margin-top: 4vh;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 2vw;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 0.5vw;
+
+        margin-bottom: 2vh;
+
+        & > input {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+#etapaCadastroUsuariaTres {
+  & fieldset {
+    border: 0;
+
+    margin-top: 4vh;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 2vw;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 0.5vw;
+
+        margin-bottom: 2vh;
       }
     }
   }

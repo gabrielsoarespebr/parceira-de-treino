@@ -6,6 +6,7 @@ import identidadeFrente from "/src/assets/image/identidadeFrente.png";
 import identidadeVerso from "/src/assets/image/identidadeVerso.png";
 import mulherIdentidadeFrente from "/src/assets/image/mulherIdentidadeFrente.jpg";
 import mulherIdentidadeVerso from "/src/assets/image/mulherIdentidadeVerso.jpg";
+import { EstadosBrasileiros } from "../../data/enums/EstadosBrasileiros";
 import { useEffect, useState } from "react";
 
 export const CadastroUsuaria = () => {
@@ -160,7 +161,7 @@ export const CadastroUsuaria = () => {
                   </li>
                   <li>
                     <div>
-                    <p>Foto segurando documento de identidade (verso)</p>
+                      <p>Foto segurando documento de identidade (verso)</p>
                       <img
                         src={mulherIdentidadeVerso}
                         alt="Mulher segurando documento de identidade (verso)"
@@ -174,6 +175,182 @@ export const CadastroUsuaria = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Avançar
+              </button>
+            </div>
+          </div>
+        )}
+        {etapaCadastroUsuaria === 2 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaDois">
+            <h2>Dados pessoais</h2>
+            <div>
+              <p>Preencha seus dados:</p>
+              <form>
+                <fieldset>
+                  <div>
+                    <div>
+                      <label htmlFor="usuariaNome">Nome*</label>
+                      <input type="text" placeholder="Nome" id="usuariaNome" />
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaSobrenome">Sobrenome*</label>
+                      <input
+                        type="text"
+                        placeholder="Sobrenome"
+                        id="usuariaSobrenome"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <label htmlFor="usuariaCpf">CPF*</label>
+                      <input type="text" placeholder="CPF" id="usuariaCpf" />
+                    </div>
+                    <div>
+                      <label htmlFor="usuariaDataNascimento">
+                        Data de nascimento*
+                      </label>
+                      <input
+                        type="date"
+                        name="usuariaDataNascimento"
+                        id="usuariaDataNascimento"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <div>
+                    <div>
+                      <label htmlFor="usuariaEnderecoCep">CEP*</label>
+                      <input
+                        type="text"
+                        placeholder="Insira seu CEP"
+                        id="usuariaEnderecoCep"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaEnderecoEstado">UF*</label>
+                      <select
+                        name="usuariaEnderecoEstado"
+                        id="usuariaEnderecoEstado"
+                      >
+                        {Object.keys(EstadosBrasileiros).map((estado) => {
+                          if (isNaN(estado)) {
+                            return <option key={estado}>{estado}</option>;
+                          }
+                        })}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaEnderecoCidade">Cidade*</label>
+                      <input
+                        type="text"
+                        placeholder="Cidade"
+                        id="usuariaEnderecoCidade"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <label htmlFor="usuariaEnderecoBairro">Bairro*</label>
+                      <input
+                        type="text"
+                        placeholder="Bairro"
+                        id="usuariaEnderecoBairro"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaEnderecoRua">Rua*</label>
+                      <input
+                        type="text"
+                        placeholder="Rua"
+                        id="usuariaEnderecoRua"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaEnderecoNumero">Número*</label>
+                      <input
+                        type="text"
+                        placeholder="Nº"
+                        id="usuariaEnderecoNumero"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Avançar
+              </button>
+            </div>
+          </div>
+        )}
+        {etapaCadastroUsuaria === 3 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaTres">
+            <h2>Dados de login</h2>
+            <div>
+              <p>Preencha seus dados:</p>
+              <form>
+                <fieldset>
+                  <div>
+                    <div>
+                      <label htmlFor="usuariaEmail">E-mail*</label>
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        id="usuariaEmail"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="usuariaSenha">Senha*</label>
+                      <input
+                        type="password"
+                        name="usuariaSenha"
+                        id="usuariaSenha"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
             </div>
             <div className="botoesDiv">
               <button
