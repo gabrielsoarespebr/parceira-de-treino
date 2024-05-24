@@ -16,7 +16,7 @@
   background: url("../../assets/image/fundoTexturaRoxoTranslucido.png");
 }
 
-#etapaNumeroLista {
+#etapaCadastroUsuariaNumeroLista {
   width: 70vw;
   list-style: none;
 
@@ -26,7 +26,7 @@
   justify-content: space-around;
 }
 
-.etapa {
+.etapaCadastroUsuaria {
   width: 70vw;
 
   padding: 5vw;
@@ -38,6 +38,10 @@
 
   box-shadow: 0px 0px 15px rgb(161, 161, 161);
 
+  & > h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
   & > div > div {
     display: flex;
     justify-content: space-between;
@@ -46,7 +50,7 @@
   }
 }
 
-#etapaZero {
+#etapaCadastroUsuariaZero {
   & img {
     width: 32vw;
 
@@ -55,10 +59,50 @@
 
   & ol {
     padding-left: 2vw;
-    margin: 3vh 0 6vh 0;
+    margin: 3vh 0;
 
     & li {
       margin-bottom: 1.2vh;
+    }
+  }
+}
+
+#etapaCadastroUsuariaUm {
+  & ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+    margin: 3vh 0;
+
+    & li {
+      width: 23%;
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p{
+          text-align: center;
+
+          font-size: 80%;
+        }
+
+        & img {
+          width: 100%;
+        }
+
+        & input[type="file"] {
+          width: 100%;
+
+          margin-top: 1vh;
+        }
+      }
     }
   }
 }
@@ -81,24 +125,51 @@
 
   & > button:last-of-type {
     width: 75%;
-    cursor: pointer;
 
     background-color: var(--roxoEscuro);
 
     outline: none;
     border: none;
 
-    font-weight: inherit;
-
     padding: 1vh 2vw;
   }
 }
 
-.botao {
+.botaoCadastro {
+  cursor: pointer;
+
+  border: none;
   border-radius: var(--bordaArredondada);
 
   color: var(--branco);
 
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+
+  font-weight: inherit;
+
+  margin-top: 3vh;
+}
+
+.etapaDesativada,
+.etapaAtivada {
+  padding: 1.7vh 2vw;
+
+  border-radius: 50%;
+}
+
+.etapaDesativada {
+  background-color: rgb(212, 212, 212);
+
+  color: rgb(157, 157, 157);
+}
+
+.etapaAtivada {
+  background-color: var(--roxoMedio);
+
+  color: var(--branco);
+}
+
+.etapaCadastroUsuariaNumero:last-of-type {
+  padding: 1.7vh 1.7vw;
 }

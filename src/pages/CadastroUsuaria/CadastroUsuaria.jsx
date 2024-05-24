@@ -2,8 +2,35 @@ import "./CadastroUsuaria.css";
 import { Divider } from "../../shared/components/Divider/Divider";
 import { Footer } from "./components/Footer/Footer";
 import mulheresDeMaosDadas from "/src/assets/image/mulheresDeMaosDadas.jpg";
+import identidadeFrente from "/src/assets/image/identidadeFrente.png";
+import identidadeVerso from "/src/assets/image/identidadeVerso.png";
+import mulherIdentidadeFrente from "/src/assets/image/mulherIdentidadeFrente.jpg";
+import mulherIdentidadeVerso from "/src/assets/image/mulherIdentidadeVerso.jpg";
+import { useEffect, useState } from "react";
 
 export const CadastroUsuaria = () => {
+  const [etapaCadastroUsuaria, setEtapaCadastroUsuaria] = useState(0);
+  const [etapaCadastroUsuariaLista, setEtapaCadastroUsuariaLista] = useState([
+    { id: 1, ativada: false },
+    { id: 2, ativada: false },
+    { id: 3, ativada: false },
+    { id: 4, ativada: false },
+    { id: 5, ativada: false },
+    { id: 6, ativada: false },
+    { id: 7, ativada: false },
+  ]);
+
+  useEffect(() => {
+    const etapaCadastroUsuariaListaAtualizada = [...etapaCadastroUsuariaLista];
+
+    etapaCadastroUsuariaListaAtualizada.forEach((etapa) => {
+      if (etapa.id === etapaCadastroUsuaria) etapa.ativada = true;
+      else if (etapa.id > etapaCadastroUsuaria) etapa.ativada = false;
+    });
+
+    setEtapaCadastroUsuariaLista(etapaCadastroUsuariaListaAtualizada);
+  }, [etapaCadastroUsuaria]);
+
   return (
     <>
       <header>
@@ -18,39 +45,156 @@ export const CadastroUsuaria = () => {
         </a>
       </header>
       <section className="cadastroUsuaria">
-        <ul id="etapaNumeroLista">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
+        <ul id="etapaCadastroUsuariaNumeroLista">
+          {etapaCadastroUsuariaLista.map((etapa) => {
+            if (etapa.id === 7) {
+              return (
+                <li
+                  key={etapa.id}
+                  className={`etapaCadastroUsuariaNumero ${
+                    etapa.ativada ? "etapaAtivada" : "etapaDesativada"
+                  }`}
+                >
+                  <i className="fa-solid fa-check"></i>
+                </li>
+              );
+            } else {
+              return (
+                <li
+                  key={etapa.id}
+                  className={`etapaCadastroUsuariaNumero ${
+                    etapa.ativada ? "etapaAtivada" : "etapaDesativada"
+                  }`}
+                >
+                  {etapa.id}
+                </li>
+              );
+            }
+          })}
         </ul>
-        <div className="etapa" id="etapaZero">
-          <div>
-            <p>
-              Pela segurança das nossas usuárias, o cadastro na nossa plataforma
-              requer as seguintes etapas:
-            </p>
+        {etapaCadastroUsuaria === 0 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaZero">
+            <h2>Informações sobre o cadastro</h2>
             <div>
-              <ol>
-                <li>Fotos para verificação</li>
-                <li>Dados pessoais</li>
-                <li>Dados de login</li>
-                <li>Objetivo e esportes</li>
-                <li>Sua apresentação</li>
-                <li>Planos (gratuito, pró ou premium)</li>
-              </ol>
-              <img src={mulheresDeMaosDadas} alt="Mulheres de mãos dadas" />
+              <p>
+                Pela segurança das nossas usuárias, o cadastro na nossa
+                plataforma requer as seguintes etapas:
+              </p>
+              <div>
+                <ol>
+                  <li>Fotos para verificação</li>
+                  <li>Dados pessoais</li>
+                  <li>Dados de login</li>
+                  <li>Objetivo e esportes</li>
+                  <li>Sua apresentação</li>
+                  <li>Planos (free, plus ou premium)</li>
+                </ol>
+                <img src={mulheresDeMaosDadas} alt="Mulheres de mãos dadas" />
+              </div>
+            </div>
+            <div className="botoesDiv">
+              <a href="/" className="botaoCadastro">
+                Voltar
+              </a>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Estou de acordo
+              </button>
             </div>
           </div>
-          <div className="botoesDiv">
-            <a href="/" className="botao">
-              Voltar
-            </a>
-            <button className="botao">Estou de acordo</button>
+        )}
+        {etapaCadastroUsuaria === 1 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaUm">
+            <h2>Fotos para verificação</h2>
+            <div>
+              <p>
+                Envie as fotos de verificação conforme os exemplos a seguir:
+              </p>
+              <div>
+                <ul>
+                  <li>
+                    <div>
+                      <p>Documento de identidade (frente)</p>
+                      <img
+                        src={identidadeFrente}
+                        alt="Documento de identidade (frente)"
+                      />
+                      <input
+                        type="file"
+                        name="identidadeFrente"
+                        id="identidadeFrente"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Documento de identidade (verso)</p>
+                      <img
+                        src={identidadeVerso}
+                        alt="Documento de identidade (verso)"
+                      />
+                      <input
+                        type="file"
+                        name="identidadeVerso"
+                        id="identidadeVerso"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Foto segurando documento de identidade (frente)</p>
+                      <img
+                        src={mulherIdentidadeFrente}
+                        alt="Mulher segurando documento de identidade (frente)"
+                      />
+                      <input
+                        type="file"
+                        name="mulherIdentidadeFrente"
+                        id="mulherIdentidadeFrente"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                    <p>Foto segurando documento de identidade (verso)</p>
+                      <img
+                        src={mulherIdentidadeVerso}
+                        alt="Mulher segurando documento de identidade (verso)"
+                      />
+                      <input
+                        type="file"
+                        name="mulherIdentidadeVerso"
+                        id="mulherIdentidadeVerso"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Avançar
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </section>
       <Divider />
       <Footer />
