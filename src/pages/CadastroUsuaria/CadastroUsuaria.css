@@ -136,8 +136,19 @@
   width: 80%;
 }
 
-#etapaCadastroUsuariaQuatro #objetivo {
+#etapaCadastroUsuariaQuatro > div:first-of-type {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+
+  gap: 6vh;
+}
+
+#etapaCadastroUsuariaQuatro #objetivo,
+#etapaCadastroUsuariaQuatro #esportes {
+  flex-direction: column;
+
+  gap: 2vh;
 
   & > ul {
     list-style: none;
@@ -165,9 +176,17 @@
   }
 }
 
-.objetivoAtivo {
+.objetivoAtivo,.esporteAtivo {
   background-color: var(--roxoEscuro);
   color: var(--branco);
+}
+
+#etapaCadastroUsuariaQuatro #esportes>ul {
+  flex-wrap: wrap;
+}
+
+#etapaCadastroUsuariaQuatro > .botoesDiv {
+  margin-top: 2vh;
 }
 
 .botoesDiv {

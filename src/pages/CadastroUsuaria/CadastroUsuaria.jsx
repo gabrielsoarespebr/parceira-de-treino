@@ -8,6 +8,7 @@ import mulherIdentidadeFrente from "/src/assets/image/mulherIdentidadeFrente.jpg
 import mulherIdentidadeVerso from "/src/assets/image/mulherIdentidadeVerso.jpg";
 import { EstadosBrasileiros } from "../../data/enums/EstadosBrasileiros";
 import { Objetivos } from "../../data/enums/Objetivos";
+import { Esportes } from "../../data/enums/Esportes";
 import { useEffect, useState } from "react";
 
 export const CadastroUsuaria = () => {
@@ -38,6 +39,24 @@ export const CadastroUsuaria = () => {
   // ESTILO CSS DO OBJETIVO - começo
   const [objetivoEscolhido, setObjetivoEscolhido] = useState(-1);
   // ESTILO CSS DO OBJETIVO - fim
+
+  // ESTILO CSS DOS ESPORTES - começo
+  const [esporteEscolhidoLista, setEsporteEscolhidoLista] = useState([]);
+
+  const atualizaEsporteEscolhidoLista = (id) => {
+    if (esporteEscolhidoLista.length > 3) {
+      let esporteEscolhidoListaAtualizada = [...esporteEscolhidoLista];
+
+      esporteEscolhidoListaAtualizada.shift();
+
+      esporteEscolhidoListaAtualizada.push(id);
+
+      setEsporteEscolhidoLista([esporteEscolhidoListaAtualizada]);
+    } else {
+      setEsporteEscolhidoLista([...esporteEscolhidoLista, id]);
+    }
+  };
+  // ESTILO CSS DOS ESPORTES - fim
 
   return (
     <>
@@ -392,11 +411,34 @@ export const CadastroUsuaria = () => {
                         <li
                           key={id}
                           className={
-                            id === objetivoEscolhido ? "objetivoAtivo" : "objetivoInativo"
+                            id === objetivoEscolhido
+                              ? "objetivoAtivo"
+                              : "objetivoInativo"
                           }
                           onClick={() => setObjetivoEscolhido(id)}
                         >
                           {objetivo}
+                        </li>
+                      );
+                  })}
+                </ul>
+              </div>
+              <div id="esportes">
+                <p>Selecione seus esportes (máximo: 3)</p>
+                <ul>
+                  {Object.values(Esportes).map((esporte, id) => {
+                    if (isNaN(esporte))
+                      return (
+                        <li
+                          key={id}
+                          className={
+                            esporteEscolhidoLista.includes(id)
+                              ? "esporteAtivo"
+                              : "esporteInativo"
+                          }
+                          onClick={() => atualizaEsporteEscolhidoLista(id)}
+                        >
+                          {esporte}
                         </li>
                       );
                   })}
