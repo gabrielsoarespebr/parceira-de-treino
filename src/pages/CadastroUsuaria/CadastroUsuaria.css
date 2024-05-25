@@ -42,11 +42,36 @@
     text-align: center;
     margin-bottom: 3vh;
   }
+
   & > div > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3vw;
+  }
+
+  & fieldset {
+    border: 0;
+
+    margin-top: 4vh;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 2vw;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 0.5vw;
+
+        margin-bottom: 2vh;
+      }
+    }
   }
 }
 
@@ -107,60 +132,42 @@
   }
 }
 
-#etapaCadastroUsuariaDois {
-  & fieldset {
-    border: 0;
+#etapaCadastroUsuariaDois fieldset > div > div > input {
+  width: 80%;
+}
 
-    margin-top: 4vh;
+#etapaCadastroUsuariaQuatro #objetivo {
+  flex-direction: column;
 
-    & > div {
+  & > ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+    & > li {
+      cursor: pointer;
+
+      border: 0.1rem solid var(--roxoEscuro);
+      border-radius: var(--bordaArredondada);
+
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
 
-      gap: 2vw;
+      text-align: center;
 
-      & > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      font-size: 85%;
 
-        gap: 0.5vw;
-
-        margin-bottom: 2vh;
-
-        & > input {
-          width: 80%;
-        }
-      }
+      padding: 0.2vh 0.5vw;
     }
   }
 }
 
-#etapaCadastroUsuariaTres {
-  & fieldset {
-    border: 0;
-
-    margin-top: 4vh;
-
-    & > div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      gap: 2vw;
-
-      & > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        gap: 0.5vw;
-
-        margin-bottom: 2vh;
-      }
-    }
-  }
+.objetivoAtivo {
+  background-color: var(--roxoEscuro);
+  color: var(--branco);
 }
 
 .botoesDiv {

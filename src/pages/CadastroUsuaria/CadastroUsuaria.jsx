@@ -7,9 +7,11 @@ import identidadeVerso from "/src/assets/image/identidadeVerso.png";
 import mulherIdentidadeFrente from "/src/assets/image/mulherIdentidadeFrente.jpg";
 import mulherIdentidadeVerso from "/src/assets/image/mulherIdentidadeVerso.jpg";
 import { EstadosBrasileiros } from "../../data/enums/EstadosBrasileiros";
+import { Objetivos } from "../../data/enums/Objetivos";
 import { useEffect, useState } from "react";
 
 export const CadastroUsuaria = () => {
+  // ETAPAS DO CADASTRO - começo
   const [etapaCadastroUsuaria, setEtapaCadastroUsuaria] = useState(0);
   const [etapaCadastroUsuariaLista, setEtapaCadastroUsuariaLista] = useState([
     { id: 1, ativada: false },
@@ -31,6 +33,11 @@ export const CadastroUsuaria = () => {
 
     setEtapaCadastroUsuariaLista(etapaCadastroUsuariaListaAtualizada);
   }, [etapaCadastroUsuaria]);
+  // ETAPAS DO CADASTRO - fim
+
+  // ESTILO CSS DO OBJETIVO - começo
+  const [objetivoEscolhido, setObjetivoEscolhido] = useState(-1);
+  // ESTILO CSS DO OBJETIVO - fim
 
   return (
     <>
@@ -351,6 +358,50 @@ export const CadastroUsuaria = () => {
                   </div>
                 </fieldset>
               </form>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Avançar
+              </button>
+            </div>
+          </div>
+        )}
+        {etapaCadastroUsuaria === 4 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaQuatro">
+            <h2>Objetivo e esportes</h2>
+            <div>
+              <div id="objetivo">
+                <p>Selecione seu objetivo (máximo: 1)</p>
+                <ul>
+                  {Object.values(Objetivos).map((objetivo, id) => {
+                    if (isNaN(objetivo))
+                      return (
+                        <li
+                          key={id}
+                          className={
+                            id === objetivoEscolhido ? "objetivoAtivo" : "objetivoInativo"
+                          }
+                          onClick={() => setObjetivoEscolhido(id)}
+                        >
+                          {objetivo}
+                        </li>
+                      );
+                  })}
+                </ul>
+              </div>
             </div>
             <div className="botoesDiv">
               <button
