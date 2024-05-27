@@ -176,17 +176,36 @@
   }
 }
 
-.objetivoAtivo,.esporteAtivo {
+.objetivoAtivo,
+.esporteAtivo {
   background-color: var(--roxoEscuro);
   color: var(--branco);
 }
 
-#etapaCadastroUsuariaQuatro #esportes>ul {
+#etapaCadastroUsuariaQuatro #esportes > ul {
   flex-wrap: wrap;
 }
 
-#etapaCadastroUsuariaQuatro > .botoesDiv {
+#etapaCadastroUsuariaQuatro > .botoesDiv,
+#etapaCadastroUsuariaCinco > .botoesDiv {
   margin-top: 2vh;
+}
+
+#etapaCadastroUsuariaCinco > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+
+  & > div {
+    flex-direction: column;
+
+    & textarea {
+      width: 100%;
+      height: 10vh;
+
+      resize: none;
+    }
+  }
 }
 
 .botoesDiv {

@@ -465,6 +465,42 @@ export const CadastroUsuaria = () => {
             </div>
           </div>
         )}
+        {etapaCadastroUsuaria === 5 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaCinco">
+            <h2>Sua apresentação</h2>
+            <div>
+              <div>
+                <p>Foto de perfil:</p>
+                <input type="file" name="perfilFoto" id="perfilFoto" />
+              </div>
+
+              <div>
+                <p>
+                  Descreva quem você é de acordo com seus gostos e interesses:
+                </p>
+                <textarea name="perfilDescricao" id="perfilDescricao"></textarea>
+              </div>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Avançar
+              </button>
+            </div>
+          </div>
+        )}
       </section>
       <Divider />
       <Footer />
