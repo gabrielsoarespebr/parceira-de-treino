@@ -5,6 +5,7 @@ import { ProfissionalCard } from "./components/ProfissionalCard/ProfissionalCard
 import { Profissionais } from "../../data/Profissionais";
 import { useEffect, useState } from "react";
 import { Footer } from "./components/Footer/Footer";
+import logo from "/src/assets/image/logoBranco.png";
 
 export const MuralDeProfissionais = () => {
   const [profissionaisLista, setProfissionaisLista] = useState(Profissionais);
@@ -32,7 +33,7 @@ export const MuralDeProfissionais = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />
