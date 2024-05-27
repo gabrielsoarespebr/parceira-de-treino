@@ -2,24 +2,57 @@ import "./Chat.css";
 import { IoIosSend } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmojiEmotions } from "react-icons/md";
-import parceira3Laura from "/src/assets/image/usuarias/parceira3Laura.png"
+import parceira3Laura from "/src/assets/image/usuarias/parceira3Laura.png";
 
 
 export const Chat = () => {
+  
   return (
     <>
       <header>
-        {/* <div className="marca">
-          <img
-            src="./src/assets/image/logoFundoTransparente.png"
-            alt="logo"
-            id="logoHeader"
-          />
-          <h1>Parceira de Treino</h1>
-        </div> */}
+        <img
+          src="./src/assets/image/logoBranco.png"
+          alt="Logotipo FitSister"
+          id="logoHeader"
+        />
+        <nav>
+          <ul className="barraDeNavegacao">
+            <li>
+              <a href="">
+                <i className="fa-solid fa-circle-user"></i>
+                <p>Meu perfil</p>
+              </a>
+            </li>
+            <li>
+              <a href="/chat">
+                <i className="fa-solid fa-comments"></i>
+                <p>Chat</p>
+              </a>
+            </li>
+            <li>
+              <a href="/muraldeprofissionais">
+                <span className="material-icons">sports</span>
+                <p>Profissionais</p>
+              </a>
+            </li>
+            <li>
+              <a href="/home">
+                <i className="fa-solid fa-right-to-bracket"></i>
+                <p>Sair</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <div className="fundo">
+
+      <section class="container">
+
+        <section class="chat"> 
+
+          <form class="container1">
+
+        <div class="fundo">
         <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
         {/* <h1>Laura, 34</h1>
         <h3>Online</h3>
@@ -27,13 +60,7 @@ export const Chat = () => {
         <table className="fundochat">
         
         </table>
-      </div>
-
-      <section className="container">
-
-        <section className="chat"> 
-
-          {/* <form className="container1"> */}
+        </div>
 
             <section className="chat_mensagens">
               
@@ -64,7 +91,7 @@ export const Chat = () => {
               <div className="my_message">Beleza, até amanhã.</div>
 
             </section> 
-          {/* </form> */}
+          </form>
            
             <form className="chat_form">
 
