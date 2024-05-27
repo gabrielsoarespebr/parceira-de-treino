@@ -1,0 +1,130 @@
+.profissionalCard {
+  position: relative;
+
+  width: var(--larguraFotoCard);
+  height: 100%;
+
+  border: 0.1rem solid var(--roxoEscuro);
+  border-radius: var(--bordaArredondada);
+
+  background: linear-gradient(var(--branco) 30%, var(--roxoClaro));
+
+  & > div:first-of-type {
+    position: relative;
+  }
+
+  & > div > img:last-of-type {
+    width: 100%;
+
+    border-radius: var(--bordaArredondada) var(--bordaArredondada) 0 0;
+  }
+
+  & > div:last-of-type {
+    padding: 0.5vh 1.5vw 2vh 1.5vw;
+
+    & > p {
+      font-size: 130%;
+    }
+
+    & .profissaoDiv {
+      margin: 2vh 0;
+    }
+  }
+}
+
+.profissaoDiv,
+.redesSociaisDiv {
+  & > p:first-of-type {
+    font-weight: 400;
+  }
+}
+
+.profissaoDiv > p:last-of-type {
+  background-color: var(--roxoEscuro);
+  color: var(--branco);
+
+  width: fit-content;
+
+  margin-top: 0.7vh;
+  padding: 0.4vw;
+
+  border-radius: var(--bordaArredondada);
+}
+
+.iconeDistanciaProfissional {
+  position: absolute;
+  top: calc(var(--larguraFotoCard) - 3vw);
+
+  background-color: var(--branco);
+
+  border-radius: var(--bordaArredondada);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  margin-left: 1.5vh;
+  padding: 0.1vh 0.3vw;
+}
+
+.redesSociaisDiv > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+
+  & > li {
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    > a {
+      color: inherit;
+
+      font-size: 4.5vw;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(1.3);
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .profissionalCard {
+    width: 27vw;
+  }
+
+  .iconeDistanciaProfissional {
+    width: 27vw;
+    top: 19.8vw;
+
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 520px) {
+  .profissionalCard {
+    width: 42vw;
+  }
+
+  .iconeDistanciaProfissional {
+    width: 42vw;
+    top: 30vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .profissionalCard {
+    width: 70vw;
+  }
+
+  .iconeDistanciaProfissional {
+    width: 70vw;
+    top: 51vw;
+
+    font-size: 100%;
+  }
+}

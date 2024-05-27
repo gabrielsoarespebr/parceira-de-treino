@@ -1,0 +1,79 @@
+#bannerMuralDePessoas {
+  background-color: var(--roxoTranslucido);
+
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 5vw;
+
+    & > p:first-of-type {
+      font-size: 200%;
+    }
+
+    & > p:last-of-type {
+      font-size: 290%;
+    }
+  }
+
+  & > img {
+    width: 50vw;
+
+    mask-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0%, rgba(0, 0, 0, 0)),
+      color-stop(50%, rgba(0, 0, 0, 1)),
+      color-stop(90%, rgba(0, 0, 0, 1))
+    );
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0%, rgba(0, 0, 0, 0)),
+      color-stop(50%, rgba(0, 0, 0, 1)),
+      color-stop(90%, rgba(0, 0, 0, 1))
+    );
+  }
+}
+
+@media (max-width: 740px) {
+  #bannerMuralDePessoas > div {
+    & > p:first-of-type {
+      font-size: 140%;
+    }
+
+    & > p:last-of-type {
+      font-size: 190%;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  #bannerMuralDePessoas {
+    display: flex;
+    justify-content: center;
+
+    background: url("../../../../assets/image/fundoTexturaRoxoTranslucido.png");
+    background-repeat: repeat;
+
+    & > div {
+      width: auto;
+      text-align: center;
+
+      padding-top: 4vh;
+      padding-bottom: 4vh;
+    }
+
+    & > img {
+      display: none;
+    }
+  }
+}

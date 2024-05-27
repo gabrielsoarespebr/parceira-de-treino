@@ -1,24 +1,19 @@
-/* header {
-  background: linear-gradient(#671C61, #a14e9a);
+header {
+  background: linear-gradient(var(--roxoMedio),var(--roxoEscuro));
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  padding: .5vh 3vw .5vh 2vw;
 
-  & .marca {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    gap: 1rem;
-  }
+  padding: .5vh 4vw .5vh 3.5vw;
 
   & img {
-    width: 5vw;
-    aspect-ratio: 1/1;
+    width: 15vw;
+    height: 7vh;
+    object-fit: contain;
   }
-} */
+}
+
 
 body{
   background-color: #ffffff;
@@ -137,8 +132,8 @@ body{
   font-weight: 700;
   color: #5a0e52;
 }
-
-/* .container1{
+/* 
+.container1{
   background-color: #ECFDFA;
   padding: 15px 20px;
   display: flex;
@@ -149,11 +144,3 @@ body{
   left: 0;
   width: 70%;
 } */
-
-
-
-
-
-
-
-
