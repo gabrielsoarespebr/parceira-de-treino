@@ -32,7 +32,7 @@ export const MuralDeProfissionais = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src="/assets/image/logoBranco.png"
           alt="Logotipo FitSister"
           id="logoHeader"
         />
