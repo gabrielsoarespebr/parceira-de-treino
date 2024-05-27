@@ -33,7 +33,6 @@ function PaginaLogin(){
                      type="email"
                     value={email}
                     onChange={e => setEmail(e.target.value) } />
-                
                 <span className="focus-input" data-placeholder="email">Email</span>
               </div>
 
