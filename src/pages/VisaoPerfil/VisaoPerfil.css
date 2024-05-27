@@ -42,7 +42,7 @@
 
 .descricao{
     color: #6e6e6e;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 25px;
 }
 
@@ -154,7 +154,7 @@
     color: #BB529F;
     font-weight: normal;
     margin-left: 450px;
-    margin-top: -205px;
+    margin-top: -200px;
     font-size: 20px;
 }
 
@@ -214,6 +214,23 @@
     margin-left: 600px;    
 }
 
+.coracao{
+    width: 39px;
+    height: 39px;
+}
+
+.match{
+    background-color: #f1b0e1;
+    height: 63px;
+    width: 63px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 330px;
+    margin-top: -130px;
+
+}
 
 
 
