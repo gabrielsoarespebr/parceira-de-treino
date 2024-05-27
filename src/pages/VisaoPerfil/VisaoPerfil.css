@@ -1,309 +1,242 @@
 .CaixaVisuPerfil{
-    background-color: #f0e5e5;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 100%; */
-    /* transform: translateY(-50%); */
-    padding: 10px;
+    background-color: rgb(230, 227, 221);
     width: 846px;
     height: 734px;
-    margin: 50px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.imagemPerfil{
+    width: 275px;
+    height: 275px;
+    margin-right: 20px;
     border-radius: 10px;
-}
-
-.nomeIdade{
-    color: rgb(156, 59, 143) ;
-
-}
-
-.CaixaMaisParceiras{
-    background-color: #f0e5e5;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    
-}
-
-.MaisParceiras{
-    color: rgb(156, 59, 143);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .imagemNome{
     display: flex;
+    align-items: center;
+    
 }
 
 .brenda{
-    color: rgb(156, 59, 143);
-    width: 256px;
-    height: 36px;
-    margin-top: 20px;
-    left: 403px;
-    gap: 0px;
-    opacity: 0px;
-    margin-left: 30px;
-    white-space: nowrap;
-    font-family:Rubik;
-
-}
-
-.imagemNome {
-    width: 275px;
-    height: 276px;
-    margin-top: 20px;
-    left: 98px;
-    gap: 0px;
-    border-radius: 16px 0px 0px 0px;
-    border: 2px 2px 0px 2px;
-    opacity: 0px;
-    border-radius: 10px;
+    color: #BB529F;
+    margin-top: -150px;
+    margin-left: 10px;
 }
 
 .Localizacao{
-    color: #6E6E6E;
-    white-space: nowrap;
-    margin-right: 50px;
-    margin-top: 50px;
+    color: #6e6e6e;
     margin-left: -220px;
-    
+    margin-top: -90px;
 }
 
 .disponivel{
-    color: #6E6E6E;
-    margin-top: 100px;
-    margin-right: 200px;
-    margin-left: -206px;
-    margin-top: 80px;
-    color: rgb(45, 172, 45);
+    color: rgb(45, 223, 45);
+    margin-left: -155px;
+    margin-top: -40px;
 }
 
 .descricao{
-    width: 545px;
-    height: 40px;
-    margin-top: 100px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
-    color: #6E6E6E;
-
+    color: #6e6e6e;
+    margin-top: 150px;
+    margin-left: 25px;
 }
 
-
 .interesses{
-    color: rgb(156, 59, 143);
-    width: 545px;
-    height: 30px;
-    top: 640px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Rubik;
+    color: #BB529F;
     font-size: 25px;
-    font-weight: 400;
-    line-height: 29.63px;
-    text-align: left;
-    margin-top: 40px;
-    
-
-
+    font-weight: normal;
+    margin-left: 30px;
+    margin-top: 50px;
 }
 
 .ciclismo{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 168px;
+    height: 30px;
+    border: 2px solid #BB529F;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .volei{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    height: 30px;
+    width: 125px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-top: -30px;
+    border: 2px solid #BB529F;
 }
 
 .natacao{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 148px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
 }
 
 .surf{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 96px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
     margin-left: 180px;
     margin-top: -30px;
+    border: 2px solid #BB529F;
 }
 
 .mpb{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 112px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
 }
 
 .meditacao{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 152px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-left: 180px;
+    margin-left: 150px;
     margin-top: -30px;
+    border: 2px solid #BB529F;
 }
 
 .praia{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 90px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
 }
 
 .navegacao{
-    width: 162px;
-    height: 30px;
-    top: 697px;
-    left: 112px;
-    gap: 0px;
-    opacity: 0px;
+    background-color: #d9d9d9;
     border-radius: 10px;
+    color: #6e6e6e;
+    width: 156px;
+    height: 30px;
     text-align: center;
-    background-color: #D9D9D9;
-    border-color: #BB529F;
-    color: #6E6E6E;
-    margin-left: 180px;
+    margin-left: 120px;
     margin-top: -30px;
+    border: 2px solid #BB529F;
 }
 
 .informacoes{
-    color: rgb(156, 59, 143);
-    font-family: Rubik;
+    color: #BB529F;
     font-weight: normal;
-    margin-left: 440px;
-    white-space: nowrap;
-    margin-top: -180px;
+    margin-left: 450px;
+    margin-top: -200px;
+    font-size: 20px;
 }
 
+.RedesSociais{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
 
 .insta{
-    color: #6E6E6E;
-    margin-left: 550px;
-    margin-top: -25px;
+    color: #6e6e6e;
     filter: blur(2px);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .X{
-    color: #6E6E6E;
-    margin-left: 550px;
-    margin-top: -15px;
-    filter: blur(2px);
+    color: #6e6e6e;
+    filter: blur(2px); 
+    margin-left: 20px;
 }
 
 .wpp{
-    color: #6E6E6E;
-    margin-left: 550px;
-    margin-top: -10px;
-    filter: blur(2px);
-}
-
-.LogoWpp{
-    background-color: #BB529F;
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    margin-top: 15px;
-    margin-left: 500px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.ImagemWpp{
-    width: 28px;
-    
-}
-
-.logoX{
-    background-color: #BB529F;
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    margin-left: 500px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.SimboloX{
-    width: 28px; 
-}
-
-.Instagram{
-    background-color: #BB529F;
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-left: 500px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    color: #6e6e6e;
+    filter: blur(2px); 
+    margin-left: 20px;
 }
 
 .SimboloInsta{
-    width: 28px; 
+    background-color: #BB529F;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;
+    margin-top: 20px;
 }
+
+.SimboloX{
+    background-color: #BB529F;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;
+}
+
+.ImagemWpp{
+    background-color: #BB529F;
+    border-radius: 10px; 
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;    
+}
+
+.coracao{
+    width: 39px;
+    height: 39px;
+}
+
+.match{
+    background-color: #f1b0e1;
+    height: 63px;
+    width: 63px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 330px;
+    margin-top: -130px;
+
+}
+
+
+
+
+
+
+
+
+  
