@@ -45,7 +45,7 @@ function PaginaLogin(){
               </div>
 
             
-              <a href="" id="esqueci">Esqueceu a senha?</a> 
+           
             
 
               <div className="container-login-form-botao">
@@ -60,8 +60,14 @@ function PaginaLogin(){
            </div>
           </div>
         </div>
-      
+
+  
         <Footer/>
+
+        <div className="esqueceu">
+             <a href="" className="fraseesqueceu">Esqueceu a senha?</a>
+         </div>  
+      
         </>
     );
   };
