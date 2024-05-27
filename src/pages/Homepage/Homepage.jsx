@@ -6,13 +6,15 @@ import { Benefits } from "./components/Benefits/Benefits";
 import { Footer } from "./components/Footer/Footer";
 import { Professional } from "./components/Professional/Professional";
 import { Testimonials } from "./components/Testimonials/Testimonials";
+import logo from "/src/assets/image/logoBranco.png";
+
 
 export const Homepage = () => {
   return (
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />

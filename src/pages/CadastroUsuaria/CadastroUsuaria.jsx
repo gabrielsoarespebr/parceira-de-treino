@@ -1,6 +1,7 @@
 import "./CadastroUsuaria.css";
 import { Divider } from "../../shared/components/Divider/Divider";
 import { Footer } from "./components/Footer/Footer";
+import logo from "/src/assets/image/logoBranco.png";
 import mulheresDeMaosDadas from "/src/assets/image/mulheresDeMaosDadas.jpg";
 import identidadeFrente from "/src/assets/image/identidadeFrente.png";
 import identidadeVerso from "/src/assets/image/identidadeVerso.png";
@@ -62,7 +63,7 @@ export const CadastroUsuaria = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />

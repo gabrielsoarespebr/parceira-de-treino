@@ -1,4 +1,5 @@
 import "./Banner.css";
+import duplaParceiras1 from "/src/assets/image/duplaParceiras1.jpg";
 
 export const Banner = () => {
   return (
@@ -10,7 +11,7 @@ export const Banner = () => {
         <a href="/cadastrousuaria" className="botaoRoxo">Cadastre-se agora</a>
       </div>
       <img
-        src="./src/assets/image/duplaParceiras1.jpg"
+        src={duplaParceiras1}
         alt="Parceiras de treino sorrindo, olhando para um celular"
       />
     </div>
