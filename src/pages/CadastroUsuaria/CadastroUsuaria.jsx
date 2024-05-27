@@ -62,7 +62,7 @@ export const CadastroUsuaria = () => {
     <>
       <header>
         <img
-          src="/assets/image/logoBranco.png"
+          src="./src/assets/image/logoBranco.png"
           alt="Logotipo FitSister"
           id="logoHeader"
         />

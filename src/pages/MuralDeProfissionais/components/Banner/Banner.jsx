@@ -8,7 +8,7 @@ export const Banner = () => {
         <p className="fonteTitulo textoMaiusculo">As melhores!</p>
       </div>
       <img
-        src="/assets/image/profissionais2.jpg"
+        src="./src/assets/image/profissionais2.jpg"
         alt="Profissionais sorrindo"
       />
     </div>

@@ -10,7 +10,7 @@ export const Banner = () => {
         <a href="/cadastrousuaria" className="botaoRoxo">Cadastre-se agora</a>
       </div>
       <img
-        src="/assets/image/duplaParceiras1.jpg"
+        src="./src/assets/image/duplaParceiras1.jpg"
         alt="Parceiras de treino sorrindo, olhando para um celular"
       />
     </div>
