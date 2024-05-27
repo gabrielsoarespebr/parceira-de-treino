@@ -10,11 +10,39 @@ export const Chat = () => {
   return (
     <>
       <header>
-      <img
+        <img
           src="./src/assets/image/logoBranco.png"
           alt="Logotipo FitSister"
           id="logoHeader"
         />
+        <nav>
+          <ul className="barraDeNavegacao">
+            <li>
+              <a href="">
+                <i className="fa-solid fa-circle-user"></i>
+                <p>Meu perfil</p>
+              </a>
+            </li>
+            <li>
+              <a href="/chat">
+                <i className="fa-solid fa-comments"></i>
+                <p>Chat</p>
+              </a>
+            </li>
+            <li>
+              <a href="/muraldeprofissionais">
+                <span className="material-icons">sports</span>
+                <p>Profissionais</p>
+              </a>
+            </li>
+            <li>
+              <a href="/home">
+                <i className="fa-solid fa-right-to-bracket"></i>
+                <p>Sair</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
 

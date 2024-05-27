@@ -137,7 +137,7 @@ export const MuralDePessoas = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/chat">
                 <i className="fa-solid fa-comments"></i>
                 <p>Chat</p>
               </a>
@@ -149,7 +149,7 @@ export const MuralDePessoas = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/home">
                 <i className="fa-solid fa-right-to-bracket"></i>
                 <p>Sair</p>
               </a>
