@@ -4,6 +4,7 @@ import "./PaginaLogin.css";
 import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
 import { Footer } from "../Homepage/components/Footer/Footer";
 
+
 function PaginaLogin(){
 
   const[email, setEmail] = useState("")
@@ -17,11 +18,11 @@ function PaginaLogin(){
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-        <a href="" className="voltar">Voltar para a Homepage</a>
+        <a href="/home" className="voltar">Voltar para a Homepage</a>
       </header>
     
     <div className="container"> 
-       <img src={mulheresLogin} alt="mulheresexercitando" title="mulheres exerciando" id="imagemmulher"></img>
+   
 
           <div className="container-login">
              <div className="wrap-login">
@@ -33,20 +34,22 @@ function PaginaLogin(){
                      type="email"
                     value={email}
                     onChange={e => setEmail(e.target.value) } />
-                <span className="focus-input" data-placeholder="email">Email</span>
+                <span className="focus-input" data-placeholder="Email"></span>
               </div>
 
               <div className="wrap-input">
                 <input className="input" type="password" 
                 value={password}
                 onChange={e => setPassword(e.target.value) } />
-                <span className="focus-input" data-placeholder="password">Senha</span>
+                <span className="focus-input" data-placeholder="Password"></span>
               </div>
 
-              <a href="" className="esqueci">Esqueceu a senha?</a>
+            
+              <a href="" id="esqueci">Esqueceu a senha?</a> 
+            
 
               <div className="container-login-form-botao">
-                <button className="login-form-botao">Entrar</button>
+                <button className="login-form-botao" >Entrar</button>
               </div>
 
               <div className="criarconta">
@@ -54,11 +57,8 @@ function PaginaLogin(){
                 <a href="" className="criarconta2">Se cadastre</a>
               </div>
             </form>
-
-         
-
+           </div>
           </div>
-        </div>
         </div>
       
         <Footer/>
