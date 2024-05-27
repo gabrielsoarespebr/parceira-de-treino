@@ -59,14 +59,14 @@ export const CadastroUsuaria = () => {
   };
   // ESTILO CSS DOS ESPORTES - fim
 
+  // PLANO ESCOLHIDO - começo
+  const [planoEscolhido, setPlanoEscolhido] = useState(1);
+  // PLANO ESCOLHIDO - fim
+
   return (
     <>
       <header>
-        <img
-          src={logo}
-          alt="Logotipo FitSister"
-          id="logoHeader"
-        />
+        <img src={logo} alt="Logotipo FitSister" id="logoHeader" />
         <a href="/" id="voltarParaHomepage">
           <i className="fa-solid fa-house"></i>
           <p>Voltar para Homepage</p>
@@ -479,7 +479,10 @@ export const CadastroUsuaria = () => {
                 <p>
                   Descreva quem você é de acordo com seus gostos e interesses:
                 </p>
-                <textarea name="perfilDescricao" id="perfilDescricao"></textarea>
+                <textarea
+                  name="perfilDescricao"
+                  id="perfilDescricao"
+                ></textarea>
               </div>
             </div>
             <div className="botoesDiv">
@@ -500,6 +503,147 @@ export const CadastroUsuaria = () => {
                 Avançar
               </button>
             </div>
+          </div>
+        )}
+        {etapaCadastroUsuaria === 6 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaSeis">
+            <h2>Planos</h2>
+            <p>Escolha um plano:</p>
+            <div>
+              <ul>
+                <li>
+                  <div className="plano" id="planoFree">
+                    <p>Free</p>
+                    <div>
+                      <p>R$0</p>
+                    </div>
+                    <p>O básico para começar</p>
+                    <button role="button" onClick={() => setPlanoEscolhido(1)}>
+                      {planoEscolhido !== 1 && (
+                        <div>
+                          <p>Escolher</p>
+                        </div>
+                      )}
+                      {planoEscolhido === 1 && (
+                        <div>
+                          <i className="fa-solid fa-circle-check"></i>
+                          <p>Escolhido</p>
+                        </div>
+                      )}
+                    </button>
+                    <ul>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Máximo de 3
+                        conversas simultâneas
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Máximo de 1 Fit
+                        Sister
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Com anúncios
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div className="plano" id="planoPlus">
+                    <p>Plus</p>
+                    <div>
+                      <p>R$15</p>
+                      <p>/mês</p>
+                    </div>
+                    <p>Melhore sua experiência</p>
+                    <button role="button" onClick={() => setPlanoEscolhido(2)}>
+                      {planoEscolhido !== 2 && (
+                        <div>
+                          <p>Escolher</p>
+                        </div>
+                      )}
+                      {planoEscolhido === 2 && (
+                        <div>
+                          <i className="fa-solid fa-circle-check"></i>
+                          <p>Escolhido</p>
+                        </div>
+                      )}
+                    </button>
+                    <ul>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Máximo de 5
+                        conversas simultâneas
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Máximo de 3 Fit
+                        Sisters
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Sem anúncios
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div className="plano" id="planoPremium">
+                    <p>Premium</p>
+                    <div>
+                      <p>R$30</p>
+                      <p>/mês</p>
+                    </div>
+                    <p>Para usufruir sem limites</p>
+                    <button role="button" onClick={() => setPlanoEscolhido(3)}>
+                      {planoEscolhido !== 3 && (
+                        <div>
+                          <p>Escolher</p>
+                        </div>
+                      )}
+                      {planoEscolhido === 3 && (
+                        <div>
+                          <i className="fa-solid fa-circle-check"></i>
+                          <p>Escolhido</p>
+                        </div>
+                      )}
+                    </button>
+                    <ul>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Conversas
+                        simultâneas ilimitadas
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Máximo de 5 Fit
+                        Sisters
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check"></i>Sem anúncios
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="botoesDiv">
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria - 1)
+                }
+              >
+                Voltar
+              </button>
+              <button
+                className="botaoCadastro"
+                onClick={() =>
+                  setEtapaCadastroUsuaria(etapaCadastroUsuaria + 1)
+                }
+              >
+                Cadastrar
+              </button>
+            </div>
+          </div>
+        )}
+        {etapaCadastroUsuaria === 7 && (
+          <div className="etapaCadastroUsuaria" id="etapaCadastroUsuariaSete">
+            <h2>Pronto!</h2>
+            <p>Seus dados serão avaliados. A ativação da conta será notificada por e-mail.</p>
           </div>
         )}
       </section>
