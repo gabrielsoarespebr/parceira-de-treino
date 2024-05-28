@@ -68,7 +68,7 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-      <button className="botaoRoxo">Quero participar também</button>
+      <a href="/cadastrousuaria" className="botaoRoxo">Quero participar também</a>
     </section>
   );
 };
