@@ -62,9 +62,16 @@ header {
   
 }
 
-a.voltar{
-  color:white;
-  font-size: 15px;
+.voltarhome{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
   font-family: "Roboto", "sans-serif";
 }
 
@@ -77,6 +84,19 @@ a.voltar{
   padding: 77px 55px 33px 55px;
 
 }
+
+.login-form-botao-letras{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
+}
+
 
 .login-form{
   width: 100%;

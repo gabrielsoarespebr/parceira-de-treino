@@ -19,7 +19,7 @@ function PaginaLogin(){
           id="logoHeader"
         />
         <a href="/">
-        <p className="voltar">Voltar para Homepage</p> 
+        <p className="voltarhome">Voltar para Homepage</p> 
         </a>
       </header>
     
@@ -49,12 +49,13 @@ function PaginaLogin(){
             
             
               <div className="container-login-form-botao">
-                <button className="login-form-botao" >Entrar</button>
+                <button className="login-form-botao" >
+                  <a href="/muraldesisters" className="login-form-botao-letras">Entrar</a></button>
               </div>
 
               <div className="criarconta">
                 <span className="criarconta1">Não possui conta?</span>
-                <a href="" className="criarconta2">Se cadastre</a>
+                <a href="/cadastrousuaria" className="criarconta2">Se cadastre</a>
               </div>
             </form>
            </div>
