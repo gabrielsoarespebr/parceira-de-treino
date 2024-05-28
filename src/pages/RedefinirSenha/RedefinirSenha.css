@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .containerpagredefinir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./src/assets/image/fundoTexturaRoxo.png'); 
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  .container-redefinir {
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 400%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .redefinir-form-title {
+    font-size: 24px;
+    font-family: "Rubik", "Sans-serif";
+    font-weight: bold;
+    color: #5e0c55; /* Cor do texto */
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .wrap-input {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .container-redefinir-form-botao {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redefinir-form-botao {
+    background: #5e0c55; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Rubik","Sans-serif";
+  }
+  
+  a.voltar {
+    color: #f3ecf2; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  a.voltar:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .container-redefinir {
+      padding: 15px;
+    }
+  
+    .redefinir-form-title {
+      font-size: 20px;
+    }
+  
+    .input, .redefinir-form-botao {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container-redefinir {
+      padding: 10px;
+    }
+  
+    .redefinir-form-title {
+      font-size: 18px;
+    }
+  
+    .input, .redefinir-form-botao {
+      font-size: 12px;
+    }
+  }
+  
