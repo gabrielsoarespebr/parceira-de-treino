@@ -60,8 +60,16 @@ header {
 }
 
 .voltar{
-  color:white;
+
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
+
 }
 
 .wrap-login{

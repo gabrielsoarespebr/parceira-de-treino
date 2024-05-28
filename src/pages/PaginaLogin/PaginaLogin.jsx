@@ -18,7 +18,9 @@ function PaginaLogin(){
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-        <a href="/home" className="voltar">Voltar para a Homepage</a>
+        <a href="/">
+        <p className="voltar">Voltar para Homepage</p> 
+        </a>
       </header>
     
     <div className="container"> 
