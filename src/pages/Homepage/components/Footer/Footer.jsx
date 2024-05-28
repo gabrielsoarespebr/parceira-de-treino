@@ -19,10 +19,10 @@ export const Footer = () => {
                 <a href="">Fale conosco</a>
               </li>
               <li>
-                <a href="">Termos de Uso</a>
+                <a href="/termosdeuso">Termos de Uso</a>
               </li>
               <li>
-                <a href="">Política de Privacidade</a>
+                <a href="/politicadeprivacidade">Política de Privacidade</a>
               </li>
             </ul>
           </div>

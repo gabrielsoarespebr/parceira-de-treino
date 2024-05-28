@@ -5,6 +5,8 @@ import { MuralDePessoas } from "./pages/MuralDePessoas/MuralDePessoas";
 import { MuralDeProfissionais } from "./pages/MuralDeProfissionais/MuralDeProfissionais";
 import { Chat } from "./pages/Chat/Chat";
 import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
+import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
+import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         />
         <Route path="/cadastrousuaria" element={<CadastroUsuaria />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/termosdeuso" element={<TermosDeUso />} />
+        <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
       </Routes>
     </BrowserRouter>
   );
