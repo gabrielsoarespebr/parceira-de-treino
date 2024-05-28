@@ -62,24 +62,10 @@ header {
   
 }
 
-<<<<<<< HEAD
-.voltar{
-
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 0.5vw;
-
-  color: var(--branco);
-
-  text-decoration: none;
-
-=======
 a.voltar{
   color:white;
   font-size: 15px;
   font-family: "Roboto", "sans-serif";
->>>>>>> develop
 }
 
 .wrap-login{

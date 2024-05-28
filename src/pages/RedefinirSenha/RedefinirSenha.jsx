@@ -2,7 +2,7 @@ import { useState } from "react";
 import './RedefinirSenha.css';
 import { Footer } from "../Homepage/components/Footer/Footer";
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
-;
+import CadeadoIcone from "/src/assets/image/iconecadeado.png";
 
 function RedefinirSenha() {
   const [newPassword, setNewPassword] = useState("");
@@ -26,13 +26,18 @@ function RedefinirSenha() {
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-        <a href="/home" className="voltar">Voltar para a Homepage</a>
+         <a href="/" className="voltarhome">
+          <p>Voltar para Homepage</p>
+        </a>
       </header>
 
       <div className="containerpagredefinir">
         <div className="container-redefinir">
           <div className="wrap-redefinir">
             <form className="redefinir-form" onSubmit={handleSubmit}>
+              <span className="redefinir-form-title-icone">
+                <img src={CadeadoIcone} alt="Cadeado lock" />
+              </span>
               <span className="redefinir-form-title">Esqueceu sua senha?</span>
               <p>Insira uma nova senha para acessar novamente sua conta.</p>
 
@@ -59,7 +64,8 @@ function RedefinirSenha() {
               </div>
 
               <div className="container-redefinir-form-botao">
-                <button className="redefinir-form-botao">Alterar</button>
+                <button className="redefinir-form-botao">
+                  <a href="/login" className="letradobotaoalterar">Alterar</a></button>
               </div>
             </form>
           </div>

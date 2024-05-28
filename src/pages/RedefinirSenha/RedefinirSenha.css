@@ -30,7 +30,24 @@
     justify-content: center;
     text-align: center;
   }
+
+  .redefinir-form-title-icone{
+    padding: 120px;
+    
+  }
   
+ .letradobotaoalterar{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+  
+    color: var(--branco);
+  
+    text-decoration: none;
+  }
+
   .redefinir-form-title {
     font-size: 24px;
     font-family: "Rubik", "Sans-serif";
@@ -70,14 +87,17 @@
     font-family: "Rubik","Sans-serif";
   }
   
-  a.voltar {
-    color: #f3ecf2; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 0;
+  a.voltarhome {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
   }
   
-  a.voltar:hover {
+  a.voltarhome:hover {
     text-decoration: underline;
   }
   
