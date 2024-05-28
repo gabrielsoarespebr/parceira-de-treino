@@ -4,8 +4,31 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmojiEmotions } from "react-icons/md";
 import parceira3Laura from "/src/assets/image/usuarias/parceira3Laura.png";
 import logo from "/src/assets/image/logoBranco.png";
+import React, { useState } from 'react';
+import { DiVim } from "react-icons/di";
+
 
 export const Chat = () => {
+
+  const[messages,setMessages] = useState([
+    // { sender: 'me', text: 'Opa, boa noite!' },
+    // { sender: 'me', text: 'Você está bem?' },
+    // { sender: 'me', text: 'Queria saber se vai treinar lá na academia esse sábado...' },
+    { sender: 'Laura', text: 'Oi, boa noite!' },
+    // { sender: 'Laura', text: 'Já ia falar sobre isso mesmo, eu vou sim. Amanhã nós marcamos direitinho.' },
+    // { sender: 'me', text: 'Que ótimo então, estou bem também. Eu vou pela manhã.' },
+    // { sender: 'Laura', text: 'Vou chamar a Bea também.' },
+    // { sender: 'me', text: 'Tá ótimo, Laura! Chama mesmo, vai ser massa demais' }
+  ]);
+  const [newMessage, setNewMessage] = useState('');
+
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    if (newMessage.trim() !== '') {
+      setMessages([...messages, { sender: 'me', text: newMessage }]);
+      setNewMessage('');
+    }
+  };
   
   return (
     <>
@@ -44,56 +67,40 @@ export const Chat = () => {
           </ul>
         </nav>
       </header>
-
+      
+    <div className="fundo">
+      <div className="informacaopessoal">
+          <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
+          <div>
+            <h2>Laura, 34</h2>
+            <h3>Online</h3>
+            <a href="">
+            <h3>Tornar Fit Sister</h3>
+            </a>
+          </div>
+      </div>
+    </div>
 
       <section className="container">
-
-        <section className="chat"> 
-
-          <form className="container1">
-
-        <div className="fundo">
-        <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
-        {/* <h1>Laura, 34</h1>
-        <h3>Online</h3>
-        <h3>Tornar parceira de treino</h3> */}
-        <table className="fundochat">
-        
-        </table>
-        </div>
-
+    
+        <div className="chat1">
+      
             <section className="chat_mensagens">
-              
-              <div className="my_message">Opa, boa noite!</div>
-              <div className="my_message">Você está bem?</div>
-              <div className="my_message">Queria saber se vai treinar lá na academia esse sábado...</div>
-
-              <div className="message_other">
-              <span className="message_sender">Laura</span>
-              Boa noite! Estou bem, e você?</div>
-              <div className="message_other"><span className="message_sender">Laura</span>
-              Já ia falar sobre isso mesmo, eu vou sim.</div>
-
-              <div className="my_message">
-              Que ótimo então, estou bem também.
-              Eu vou pela manhã, você também?</div>
-
-              <div className="message_other"><span className="message_sender">Laura</span>
-              Sim, 7h tá bom pra você? Vou chamar a Bea também.</div>
-
-              <div className="my_message">Tá ótimo, Laura! Chama mesmo, vai ser massa demais</div>
-
-              <div className="message_other"><span className="message_sender">Laura</span>
-              sim, nos encontramos na esquina da minha rua e vamos juntas.</div>
-              <div className="message_other"><span className="message_sender">Laura</span>
-              Qualquer coisa fala, até amanhã.</div>
-
-              <div className="my_message">Beleza, até amanhã.</div>
-
+               {messages.map((message, index) => (
+                <div
+                  key={index}
+                  className={message.sender === 'me' ? 'my_message' : 'message_other'}
+                >
+                  {message.sender !== 'me' && (
+                    <span className="message_sender">{message.sender}</span>
+                  )}
+                  {message.text}
+                </div>
+              ))}
             </section> 
-          </form>
+          
            
-            <form className="chat_form">
+            <form className="chat_form" onSubmit={handleSendMessage}>
 
               <button className="button_location">
               <IoLocationSharp /> 
@@ -102,16 +109,18 @@ export const Chat = () => {
               <MdEmojiEmotions />
               </button>
 
-                <input type="text" className="chat_input" placeholder="Digite aqui..." required/>
+                <input type="text" className="chat_input" placeholder="Digite aqui..." 
+                value={newMessage}
+                onChange={(e) => setNewMessage(e.target.value)
+                }required/>
 
                 <button className="button_send">
                   <IoIosSend />
                 </button>
 
             </form>
-          </section>
-      </section>
-  
+          </div>
+      </section> 
     </>
   );
 };
