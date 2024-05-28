@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 header {
   background: linear-gradient(var(--roxoMedio),var(--roxoEscuro));
@@ -35,7 +35,8 @@ header {
   box-sizing: border-box;
 }
 
-.container{
+
+.containerpaglogin{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,17 +52,20 @@ header {
 
 .container-login{
   width: 40%;
+  /* height: 100%; */
   display: flex;
   align-items:center;
   justify-content:baseline;
   padding: 15px;
-  transform: translate(-50%,);
+  /* transform: translate(-50%,); */
+  margin: auto;
   
 }
 
-.voltar{
+a.voltar{
   color:white;
   font-size: 15px;
+  font-family: "Roboto", "sans-serif";
 }
 
 .wrap-login{
@@ -86,6 +90,7 @@ header {
   line-height: 1.2;
   text-align: center;
   height: 100px;
+  font-family: "Roboto", "sans-serif";
 }
 
 .wrap-input{
@@ -163,6 +168,7 @@ header {
   -moz-transition: all 0.4s;
 }
 
+
 .input:focus{
   outline: 0;
 }
@@ -187,16 +193,17 @@ header {
 .container-login-form-botao{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
   justify-content: center;
   padding-bottom:13px
 }
 .login-form-botao{
-  /* font-family: ''; */
+  font-family: "Roboto", "sans-serif";
   font-size: 15px;
   border:none;
   border-radius: 10px;
   color: #ffff;
-
+  margin-top: 10%;
   line-height: 1.2;
   text-transform: uppercase;
   display: flex;
@@ -215,12 +222,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 50px;
+  font-family: "Rubik", "sans-serif";
+  /* margin-top: 50px; */
 }
 
 .criarconta1{
-  /* font-family: ''; */
+  font-family: "Rubik", "sans-serif";
   font-size: 14px;
   color: #cd41a5;
   line-height: 1.5;
@@ -229,20 +236,20 @@ header {
 }
 
 .criarconta2{
-  /* font-family: ''; */
+  font-family: "Rubik", "sans-serif";
   font-size: 14px;
   color: #671C61;
   line-height: 1.5;
   text-decoration: none;
 }
 
-
 .esqueceu{
   margin-left: 790px;
   margin-top: -658px;
-
+  font-family: "Rubik", "sans-serif";
 }
 
 .fraseesqueceu{
   color:#cd41a5
+  
 }

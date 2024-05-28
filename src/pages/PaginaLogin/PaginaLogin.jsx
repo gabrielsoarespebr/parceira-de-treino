@@ -21,9 +21,7 @@ function PaginaLogin(){
         <a href="/home" className="voltar">Voltar para a Homepage</a>
       </header>
     
-    <div className="container"> 
-   
-
+    <div className="containerpaglogin"> 
           <div className="container-login">
              <div className="wrap-login">
                <form className="login-form">
@@ -41,13 +39,13 @@ function PaginaLogin(){
                 <input className="input" type="password" 
                 value={password}
                 onChange={e => setPassword(e.target.value) } />
-                <span className="focus-input" data-placeholder="Password"></span>
+                <span className="focus-input" data-placeholder="Senha"></span>
               </div>
 
             
-           
+                <a href="/redefinirsenha" className="fraseesqueceu">Esqueceu a senha?</a>
             
-
+            
               <div className="container-login-form-botao">
                 <button className="login-form-botao" >Entrar</button>
               </div>
@@ -62,12 +60,7 @@ function PaginaLogin(){
         </div>
 
   
-        <Footer/>
-
-        <div className="esqueceu">
-             <a href="" className="fraseesqueceu">Esqueceu a senha?</a>
-         </div>  
-      
+        <Footer/>      
         </>
     );
   };
