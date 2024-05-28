@@ -2,6 +2,7 @@ import { useState } from "react";
 import './RedefinirSenha.css';
 import { Footer } from "../Homepage/components/Footer/Footer";
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
+;
 
 function RedefinirSenha() {
   const [newPassword, setNewPassword] = useState("");

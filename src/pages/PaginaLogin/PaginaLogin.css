@@ -168,6 +168,7 @@ a.voltar{
   -moz-transition: all 0.4s;
 }
 
+
 .input:focus{
   outline: 0;
 }
