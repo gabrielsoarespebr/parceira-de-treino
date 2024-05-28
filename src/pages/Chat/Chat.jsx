@@ -53,10 +53,18 @@ export const Chat = () => {
           <form class="container1">
 
         <div class="fundo">
-        <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
-        {/* <h1>Laura, 34</h1>
-        <h3>Online</h3>
-        <h3>Tornar parceira de treino</h3> */}
+
+        <div className="informacaopessoal">
+          <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
+          <div>
+            <h1>Laura, 34</h1>
+            <h3>Online</h3>
+            <a href="">
+              <h3>Tornar parceira de treino</h3>
+            </a>
+          </div>
+        </div>
+
         <table className="fundochat">
         
         </table>
