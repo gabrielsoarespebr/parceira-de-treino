@@ -3,7 +3,7 @@ import { IoIosSend } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmojiEmotions } from "react-icons/md";
 import parceira3Laura from "/src/assets/image/usuarias/parceira3Laura.png";
-
+import logo from "/src/assets/image/logoBranco.png";
 
 export const Chat = () => {
   
@@ -11,7 +11,7 @@ export const Chat = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />
@@ -46,13 +46,13 @@ export const Chat = () => {
       </header>
 
 
-      <section class="container">
+      <section className="container">
 
-        <section class="chat"> 
+        <section className="chat"> 
 
-          <form class="container1">
+          <form className="container1">
 
-        <div class="fundo">
+        <div className="fundo">
         <img src={parceira3Laura} alt="mulher" className="imagem_Parceira"/>
         {/* <h1>Laura, 34</h1>
         <h3>Online</h3>
