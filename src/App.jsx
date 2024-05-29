@@ -32,7 +32,7 @@ function App() {
           element={<PoliticaDePrivacidade />}
         />
         <Route path="/redefinirsenha" element={<RedefinirSenha />} />
-        <Route path="/visaoperefil" element={<VisaoPerfil />} />
+        <Route path="/visaoperfil" element={<VisaoPerfil />} />
       </Routes>
     </BrowserRouter>
   );
