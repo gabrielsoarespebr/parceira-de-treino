@@ -1,156 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-header {
-  background: linear-gradient(var(--roxoMedio),var(--roxoEscuro));
+:root {
+  --roxoMedio: #8e44ad;
+  --roxoEscuro: #5e0c55;
+  --branco: #ffffff;
+}
 
+header {
+  background: linear-gradient(var(--roxoMedio), var(--roxoEscuro));
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: .5vh 4vw .5vh 3.5vw;
-
-  & img {
-    width: 15vw;
-    height: 7vh;
-    object-fit: contain;
-  }
 }
 
+header img {
+  width: 15vw;
+  height: 7vh;
+  object-fit: contain;
+}
 
 @media (max-width: 430px) {
-  header{
+  header {
     height: 7vh;
+  }
 
-    & img{
-      width: auto;
-      height: 65%;
-    }
+  header img {
+    width: auto;
+    height: 65%;
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.containerpaglogin{
+.containerpaglogin {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   background-image: url('../../assets/image/mulhereslogin.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px;
-
 }
 
-
-.container-login{
+.container-login {
   width: 40%;
-  /* height: 100%; */
   display: flex;
-  align-items:center;
-  justify-content:baseline;
+  align-items: center;
+  justify-content: baseline;
   padding: 15px;
-  /* transform: translate(-50%,); */
   margin: auto;
-  
 }
 
-.voltarhome{
-  color: #fff;
+.voltarhome {
+  color: var(--branco);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
-
-  color: var(--branco);
-
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
 }
 
-.wrap-login{
+.wrap-login {
   width: 100%;
-
   background-color: #f7f6f6;
   border-radius: 10px;
   overflow: hidden;
   padding: 77px 55px 33px 55px;
-
 }
 
-.login-form-botao-letras{
-  color: #fff;
+.login-form-botao-letras {
+  color: var(--branco);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
-
-  color: var(--branco);
-
   text-decoration: none;
+  font-family: "Rubik", "sans-serif";
 }
 
-
-.login-form{
+.login-form {
   width: 100%;
 }
 
-.login-form-title{
-  font-family: "Rubik";
+.login-form-title {
+  font-family: "Rubik", "Sans-serif";
   display: block;
   font-size: 30px;
   color: #671C61;
   line-height: 1.2;
   text-align: center;
   height: 100px;
-  font-family: "Roboto", "sans-serif";
 }
 
-.wrap-input{
+.wrap-input {
   width: 100%;
   height: 45px;
   position: relative;
   background-color: #d9d9d9;
   margin-bottom: 37px;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
-.input{
+.input {
   font-size: 15px;
   color: #671C61;
   line-height: 1.2;
-  border:none;
+  border: none;
   display: block;
-
   width: 100%;
   height: 45px;
-
   background-color: transparent;
   padding: 0 5px;
 }
 
-.focus-input{
+.focus-input {
   position: absolute;
   display: block;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   top: 0;
   left: 0;
-
   pointer-events: none;
   color: #c8c0c0;
-
-
 }
 
-.focus-input::before{
+.focus-input::before {
   content: "";
   display: block;
   position: absolute;
@@ -158,69 +141,56 @@ header {
   left: 0;
   width: 0;
   height: 2px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-
-
-  background:-webkit-linear-gradien(to left, #cd41a5, #ffff);
-  background:-o-linear-gradien(to left, #cd41a5, #ffff);
-  background:-moz-linear-gradien(to left, #cd41a5, #ffff);
-  background:linear-gradien(to left, #cd41a5 , #ffff);
+  transition: all 0.4s;
+  background: linear-gradient(to left, #cd41a5, #ffff);
 }
 
-.focus-input::after{
+.focus-input::after {
   font-size: 15px;
   color: #6e6e6e;
   line-height: 1.2;
-
   content: attr(data-placeholder);
   display: block;
   width: 100%;
   position: absolute;
   top: 16px;
-  left:0px;
+  left: 0px;
   padding-left: 5px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-
-.input:focus{
+.input:focus {
   outline: 0;
 }
 
-.input:focus + .focus-input::after{
+.input:focus + .focus-input::after {
   top: -15px;
 }
 
-.input:focus + .focus-input::before{
-  width: 100%;;
-}
-
-.has-val * .focus-input::after{
-  top: 15px;
-}
-
-.has-val * .focus-input::before{
+.input:focus + .focus-input::before {
   width: 100%;
 }
 
+.has-val .focus-input::after {
+  top: 15px;
+}
 
-.container-login-form-botao{
+.has-val .focus-input::before {
+  width: 100%;
+}
+
+.container-login-form-botao {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
   justify-content: center;
-  padding-bottom:13px
+  padding-bottom: 13px;
 }
-.login-form-botao{
+
+.login-form-botao {
   font-family: "Roboto", "sans-serif";
   font-size: 15px;
-  border:none;
+  border: none;
   border-radius: 10px;
   color: #ffff;
   margin-top: 10%;
@@ -234,19 +204,18 @@ header {
   background-color: #671C61;
 }
 
-.login-form-botao:hover{
+.login-form-botao:hover {
   cursor: pointer;
 }
 
-.criarconta{
+.criarconta {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Rubik", "sans-serif";
-  /* margin-top: 50px; */
 }
 
-.criarconta1{
+.criarconta1 {
   font-family: "Rubik", "sans-serif";
   font-size: 14px;
   color: #cd41a5;
@@ -255,7 +224,7 @@ header {
   text-decoration: none;
 }
 
-.criarconta2{
+.criarconta2 {
   font-family: "Rubik", "sans-serif";
   font-size: 14px;
   color: #671C61;
@@ -263,13 +232,54 @@ header {
   text-decoration: none;
 }
 
-.esqueceu{
-  margin-left: 790px;
-  margin-top: -658px;
+.esqueceu {
   font-family: "Rubik", "sans-serif";
 }
 
-.fraseesqueceu{
-  color:#cd41a5
-  
+.fraseesqueceu {
+  color: #cd41a5;
+}
+
+@media (max-width: 768px) {
+  .container-login {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .wrap-login {
+    padding: 60px 40px 20px 40px;
+  }
+
+  .login-form-title {
+    font-size: 25px;
+    height: auto;
+  }
+
+  .login-form-botao {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-login {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .wrap-login {
+    padding: 50px 30px 15px 30px;
+  }
+
+  .login-form-title {
+    font-size: 20px;
+  }
+
+  .login-form-botao {
+    width: 100%;
+  }
+
+  .esqueceu {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
