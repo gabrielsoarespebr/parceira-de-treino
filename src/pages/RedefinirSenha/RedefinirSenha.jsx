@@ -3,6 +3,7 @@ import "./RedefinirSenha.css";
 import { Footer } from "../Homepage/components/Footer/Footer";
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
 import CadeadoIcone from "/src/assets/image/iconecadeado.png";
+import logo from "/src/assets/image/logoBranco.png";
 
 export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -25,7 +26,7 @@ export const RedefinirSenha = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />

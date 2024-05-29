@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./PaginaLogin.css";
 import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
 import { Footer } from "../Homepage/components/Footer/Footer";
+import logo from "/src/assets/image/logoBranco.png";
+
 
 export const PaginaLogin = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +15,7 @@ export const PaginaLogin = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />
