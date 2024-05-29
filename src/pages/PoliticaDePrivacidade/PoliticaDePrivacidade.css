@@ -1,0 +1,22 @@
+#politicaDePrivacidade {
+  padding: 5vh 10vw;
+
+  & > h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  & > div > p {
+    margin-bottom: 2vh;
+  }
+
+  & > div > ol {
+    margin-bottom: 4vh;
+
+    padding-left: 5vw;
+
+    & > li {
+      margin-bottom: 1vh;
+    }
+  }
+}

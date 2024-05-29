@@ -97,6 +97,7 @@ body {
   color: var(--branco);
 
   text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     background-color: var(--roxoMedio);

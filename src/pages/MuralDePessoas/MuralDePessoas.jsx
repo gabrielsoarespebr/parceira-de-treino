@@ -5,6 +5,7 @@ import { UsuariaCard } from "./components/UsuariaCard/UsuariaCard";
 import { Usuarias } from "../../data/Usuarias";
 import { useEffect, useState } from "react";
 import { Footer } from "./components/Footer/Footer";
+import logo from "/src/assets/image/logoBranco.png";
 
 export const MuralDePessoas = () => {
   const [usuariasLista, setUsuariasLista] = useState(Usuarias);
@@ -124,7 +125,7 @@ export const MuralDePessoas = () => {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />
