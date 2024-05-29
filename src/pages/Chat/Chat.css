@@ -1,37 +1,44 @@
-/* header {
-  background: linear-gradient(#671C61, #a14e9a);
+header {
+  background: linear-gradient(var(--roxoMedio),var(--roxoEscuro));
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  padding: .5vh 3vw .5vh 2vw;
 
-  & .marca {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    gap: 1rem;
-  }
+  padding: .5vh 4vw .5vh 3.5vw;
 
   & img {
-    width: 5vw;
-    aspect-ratio: 1/1;
+    width: 15vw;
+    height: 7vh;
+    object-fit: contain;
   }
-} */
-
-body{
-  background-color: #ffffff;
 }
 
-.fundo{
+
+body{
   background-color: #FFF4FF;
 }
 
-.fundochat{
-  background-color: #ffffff;
+.fundo{
+  background-color: #f8ddf8;
+  margin: 10px;
+  border-radius: 10px;
 }
 
+.informacaopessoal{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+.fundochat{
+  background-color: #FFF4FF;
+}
+
+.chat1{
+  background-color: #FFF4FF;
+}
 
 .container{
   background-color: #FFF4FF;
@@ -46,8 +53,10 @@ body{
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  padding: 30px 30px 90px;
-  justify-content: flex-end;
+  padding: 300px 60px 90px;
+  background-color: #FFF4FF;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .chat_form{
@@ -137,23 +146,3 @@ body{
   font-weight: 700;
   color: #5a0e52;
 }
-
-/* .container1{
-  background-color: #ECFDFA;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 70%;
-} */
-
-
-
-
-
-
-
-

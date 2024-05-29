@@ -25,6 +25,11 @@
       font-size: 165%;
       margin-bottom: -4vh;
     }
+
+    & > a {
+      text-align: center;
+      text-decoration: none;
+    }
   }
 
   & > img {
@@ -63,7 +68,7 @@
       width: auto;
       text-align: center;
 
-      &>button{
+      & > a {
         margin-top: 20%;
       }
     }

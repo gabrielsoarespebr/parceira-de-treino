@@ -10,7 +10,7 @@ export const Footer = () => {
             <h3>Sobre a Fit Sister</h3>
             <ul className="navegadorRodape">
               <li>
-                <a href="">Cadastre-se como usuária</a>
+                <a href="/cadastrousuaria">Cadastre-se como usuária</a>
               </li>
               <li>
                 <a href="">Cadastre-se como profissional</a>
@@ -19,10 +19,10 @@ export const Footer = () => {
                 <a href="">Fale conosco</a>
               </li>
               <li>
-                <a href="">Termos de Uso</a>
+                <a href="/termosdeuso">Termos de Uso</a>
               </li>
               <li>
-                <a href="">Política de Privacidade</a>
+                <a href="/politicadeprivacidade">Política de Privacidade</a>
               </li>
             </ul>
           </div>

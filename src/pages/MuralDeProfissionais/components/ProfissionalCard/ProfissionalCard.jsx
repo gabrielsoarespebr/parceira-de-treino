@@ -43,7 +43,7 @@ export const ProfissionalCard = ({ profissional }) => {
           <p>10 km</p>
         </div>
         <img
-          src={`./src/assets/image/profissionais/${fotoPerfilUrl}`}
+          src={`https://github.com/gabrielsoarespebr/parceira-de-treino/blob/main/src/assets/image/profissionais/${fotoPerfilUrl}.jpg?raw=true`}
           alt="Foto de profissional"
         />
       </div>
@@ -72,12 +72,6 @@ export const ProfissionalCard = ({ profissional }) => {
               </a>
             </li>
           </ul>
-
-          {/* <ul>
-            {esportesLista.map((esporte, id) => (
-              <li key={id}>{esporte}</li>
-            ))}
-          </ul> */}
         </div>
       </div>
     </div>

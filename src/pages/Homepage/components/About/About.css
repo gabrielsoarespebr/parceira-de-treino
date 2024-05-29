@@ -10,6 +10,8 @@
   flex-direction: column;
   gap: 7vh;
 
+  padding-bottom: 8vh;
+
   & img {
     width: 60vw;
     border-radius: var(--bordaArredondada);
