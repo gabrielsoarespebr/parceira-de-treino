@@ -25,14 +25,8 @@ function App() {
         />
         <Route path="/cadastrousuaria" element={<CadastroUsuaria />} />
         <Route path="/chat" element={<Chat />} />
-        <Route path="/login" element={<PaginaLogin />} />
-        <Route path="/termosdeuso" element={<TermosDeUso />} />
-        <Route
-          path="/politicadeprivacidade"
-          element={<PoliticaDePrivacidade />}
-        />
-        <Route path="/redefinirsenha" element={<RedefinirSenha />} />
-        <Route path="/visaoperfil" element={<VisaoPerfil />} />
+        <Route path="/login" element={<PaginaLogin/>} />
+        <Route path="/redefinirsenha" element={<RedefinirSenha/>} /> 
       </Routes>
     </BrowserRouter>
   );
