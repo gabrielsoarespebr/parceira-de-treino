@@ -5,14 +5,14 @@ import iconeChat from "/src/assets/icons/iconeChat.png";
 import iconeInfo from "/src/assets/icons/iconeInfo.png";
 import { useState } from "react";
 
-export const UsuariaCard = ({ usuaria,OcultarUsuaria }) => {
+export const UsuariaCard = ({ usuaria, OcultarUsuaria }) => {
   const [id, setId] = useState(usuaria.id);
   const [fotoPerfilUrl, setFotoPerfilUrl] = useState(usuaria.fotoPerfilUrl);
   const [nome, setNome] = useState(usuaria.nome);
   const [dataNascimento, setDataNascimento] = useState(usuaria.dataNascimento);
   const [objetivo, setObjetivo] = useState(usuaria.objetivo);
   const [esportes, setEsportes] = useState(usuaria.esportes);
-  
+
   // IDADE - começo
   const dataNasc = new Date(dataNascimento);
 
@@ -148,19 +148,28 @@ export const UsuariaCard = ({ usuaria,OcultarUsuaria }) => {
   return (
     <div className="usuariaCard">
       <div>
-        <img src={iconeFechar} alt="ícone de fechar" className="iconeFechar" onClick={()=>OcultarUsuaria(id)}/>
+        <img
+          src={iconeFechar}
+          alt="ícone de fechar"
+          className="iconeFechar"
+          onClick={() => OcultarUsuaria(id)}
+        />
         <div className="acoesUsuariaCard">
           <div className="iconeDistancia">
             <i className="fa-solid fa-location-dot"></i>
             <p>10 km</p>
           </div>
           <div>
-            <img src={iconeChat} alt="ícone de chat" className="iconeChat" />
-            <img
-              src={iconeInfo}
-              alt="ícone de informação"
-              className="iconeInfo"
-            />
+            <a href="/chat">
+              <img src={iconeChat} alt="ícone de chat" className="iconeChat" />
+            </a>
+            <a href="/visaoperfil">
+              <img
+                src={iconeInfo}
+                alt="ícone de informação"
+                className="iconeInfo"
+              />
+            </a>
           </div>
         </div>
         <img

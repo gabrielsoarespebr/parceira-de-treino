@@ -78,6 +78,8 @@ body {
 .botaoBranco {
   font-size: 1rem;
 
+  text-decoration: none;
+
   background-color: var(--branco);
   color: var(--roxoMedio);
   font-family: inherit;

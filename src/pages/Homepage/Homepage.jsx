@@ -18,7 +18,7 @@ export const Homepage = () => {
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-        <button className="botaoBranco">Login</button>
+        <a href="/login" className="botaoBranco">Login</a>
       </header>
       <Banner />
       <Divider />
