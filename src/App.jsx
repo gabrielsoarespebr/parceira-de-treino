@@ -4,13 +4,13 @@ import { Homepage } from "./pages/Homepage/Homepage";
 import  { MuralDePessoas }  from "./pages/MuralDePessoas/MuralDePessoas";
 import { MuralDeProfissionais } from "./pages/MuralDeProfissionais/MuralDeProfissionais";
 import { Chat } from "./pages/Chat/Chat";
-import  PaginaLogin  from "./pages/PaginaLogin/PaginaLogin";
 import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
 import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
 import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
-import PaginaLogin from "./pages/PaginaLogin/PaginaLogin";
-import RedefinirSenha from "./pages/RedefinirSenha/RedefinirSenha";
-import VisaoPerfil from "./pages/VisaoPerfil/VisaoPerfil";
+import {PaginaLogin} from "./pages/PaginaLogin/PaginaLogin";
+import {RedefinirSenha} from "./pages/RedefinirSenha/RedefinirSenha";
+import {VisaoPerfil }from "./pages/VisaoPerfil/VisaoPerfil";
+import {EditarPerfil} from "./pages/EditarPerfil/EditarPerfil";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/redefinirsenha" element={<RedefinirSenha/>} /> 
         <Route path="/visaoperefil" element={<VisaoPerfil/>} /> 
+        <Route path="/editarperfil" element={<EditarPerfil/>} /> 
       </Routes>
     </BrowserRouter>
   );
