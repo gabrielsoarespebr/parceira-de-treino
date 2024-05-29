@@ -19,7 +19,7 @@ export function EditarPerfil() {
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <a href="">
+              <a href="/editarperfil">
                 <i className="fa-solid fa-circle-user"></i>
                 <p>Meu perfil</p>
               </a>
