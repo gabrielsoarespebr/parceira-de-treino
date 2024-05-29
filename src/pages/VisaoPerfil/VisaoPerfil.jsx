@@ -1,4 +1,3 @@
-import React from "react";
 import { Divider } from "../../shared/components/Divider/Divider";
 import { Footer } from "../Homepage/components/Footer/Footer";
 import "./VisaoPerfil.css";
@@ -7,6 +6,7 @@ import iconeWhatsapp from "../../assets/icons/icons8-whatsapp-50.png";
 import iconeTwitter from "../../assets/icons/icons8-twitterx-50.png";
 import parceiroBrenda from "../../assets/image/usuarias/parceira1Brenda.png";
 import iconeCoracao from "../../assets/icons/icons8-coração-48.png";
+import logo from "/src/assets/image/logoBranco.png";
 
 export function VisaoPerfil() {
   console.log("Path to Instagram icon:", iconeInstagram);
@@ -19,14 +19,14 @@ export function VisaoPerfil() {
     <>
       <header>
         <img
-          src="./src/assets/image/logoBranco.png"
+          src={logo}
           alt="Logotipo FitSister"
           id="logoHeader"
         />
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <a href="">
+              <a href="/visaoperfil">
                 <i className="fa-solid fa-circle-user"></i>
                 <p>Meu perfil</p>
               </a>
@@ -35,6 +35,12 @@ export function VisaoPerfil() {
               <a href="/chat">
                 <i className="fa-solid fa-comments"></i>
                 <p>Chat</p>
+              </a>
+            </li>
+            <li>
+              <a href="/muraldesisters">
+                <i className="fa-solid fa-user-group"></i>
+                <p>Sisters</p>
               </a>
             </li>
             <li>
@@ -65,9 +71,7 @@ export function VisaoPerfil() {
           <img className="coracao" src={iconeCoracao} alt="logoCoracao" />
         </div>
 
-        <p className="descricao">
-          Gosto de jogar futebol entre amigas.
-        </p>
+        <p className="descricao">Gosto de jogar futebol entre amigas.</p>
 
         <h2 className="interesses">Interesses da parceira</h2>
         <div className="interessesDiv">

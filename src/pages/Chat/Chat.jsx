@@ -41,7 +41,7 @@ export const Chat = () => {
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <a href="">
+              <a href="/visaoperfil">
                 <i className="fa-solid fa-circle-user"></i>
                 <p>Meu perfil</p>
               </a>
@@ -50,6 +50,12 @@ export const Chat = () => {
               <a href="/chat">
                 <i className="fa-solid fa-comments"></i>
                 <p>Chat</p>
+              </a>
+            </li>
+            <li>
+              <a href="/muraldesisters">
+                <i className="fa-solid fa-user-group"></i>
+                <p>Sisters</p>
               </a>
             </li>
             <li>

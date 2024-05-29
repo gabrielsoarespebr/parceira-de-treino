@@ -132,7 +132,7 @@ export const MuralDePessoas = () => {
         <nav>
           <ul className="barraDeNavegacao">
             <li>
-              <a href="">
+              <a href="/visaoperfil">
                 <i className="fa-solid fa-circle-user"></i>
                 <p>Meu perfil</p>
               </a>
