@@ -9,6 +9,7 @@ import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
 import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
 import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
 import RedefinirSenha from "./pages/RedefinirSenha/RedefinirSenha";
+import VisaoPerfil from "./pages/VisaoPerfil/VisaoPerfil";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/termosdeuso" element={<TermosDeUso />} />
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/redefinirsenha" element={<RedefinirSenha/>} /> 
+        <Route path="/visaoperefil" element={<VisaoPerfil/>} /> 
       </Routes>
     </BrowserRouter>
   );
