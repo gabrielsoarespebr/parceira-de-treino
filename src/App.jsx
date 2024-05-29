@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes }  from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Homepage } from "./pages/Homepage/Homepage";
-import  { MuralDePessoas }  from "./pages/MuralDePessoas/MuralDePessoas";
+import { MuralDePessoas } from "./pages/MuralDePessoas/MuralDePessoas";
 import { MuralDeProfissionais } from "./pages/MuralDeProfissionais/MuralDeProfissionais";
 import { Chat } from "./pages/Chat/Chat";
-import  PaginaLogin  from "./pages/PaginaLogin/PaginaLogin";
 import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
 import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
 import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
-import  RedefinirSenha  from "./pages/RedefinirSenha/RedefinirSenha";
-
+import { PaginaLogin } from "./pages/PaginaLogin/PaginaLogin";
+import { RedefinirSenha } from "./pages/RedefinirSenha/RedefinirSenha";
+import { VisaoPerfil } from "./pages/VisaoPerfil/VisaoPerfil";
 
 function App() {
   return (
@@ -25,10 +25,14 @@ function App() {
         />
         <Route path="/cadastrousuaria" element={<CadastroUsuaria />} />
         <Route path="/chat" element={<Chat />} />
-        <Route path="/login" element={<PaginaLogin/>} />
+        <Route path="/login" element={<PaginaLogin />} />
         <Route path="/termosdeuso" element={<TermosDeUso />} />
-        <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
+        <Route
+          path="/politicadeprivacidade"
+          element={<PoliticaDePrivacidade />}
+        />
         <Route path="/redefinirsenha" element={<RedefinirSenha />} />
+        <Route path="/visaoperfil" element={<VisaoPerfil />} />
       </Routes>
     </BrowserRouter>
   );

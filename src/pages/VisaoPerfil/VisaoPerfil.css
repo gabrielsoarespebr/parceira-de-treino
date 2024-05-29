@@ -1,0 +1,242 @@
+.CaixaVisuPerfil{
+    background-color: rgb(230, 227, 221);
+    width: 846px;
+    height: 734px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.imagemPerfil{
+    width: 275px;
+    height: 275px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.imagemNome{
+    display: flex;
+    align-items: center;
+    
+}
+
+.brenda{
+    color: #BB529F;
+    margin-top: -150px;
+    margin-left: 10px;
+}
+
+.Localizacao{
+    color: #6e6e6e;
+    margin-left: -220px;
+    margin-top: -90px;
+}
+
+.disponivel{
+    color: rgb(45, 223, 45);
+    margin-left: -155px;
+    margin-top: -40px;
+}
+
+.descricao{
+    color: #6e6e6e;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+.interesses{
+    color: #BB529F;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.ciclismo{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 168px;
+    height: 30px;
+    border: 2px solid #BB529F;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.volei{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    height: 30px;
+    width: 125px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: -30px;
+    border: 2px solid #BB529F;
+}
+
+.natacao{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 148px;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
+}
+
+.surf{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 96px;
+    height: 30px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: -30px;
+    border: 2px solid #BB529F;
+}
+
+.mpb{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 112px;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
+}
+
+.meditacao{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 152px;
+    height: 30px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: -30px;
+    border: 2px solid #BB529F;
+}
+
+.praia{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 2px solid #BB529F;
+}
+
+.navegacao{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    color: #6e6e6e;
+    width: 156px;
+    height: 30px;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: -30px;
+    border: 2px solid #BB529F;
+}
+
+.informacoes{
+    color: #BB529F;
+    font-weight: normal;
+    margin-left: 450px;
+    margin-top: -200px;
+    font-size: 20px;
+}
+
+.RedesSociais{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.insta{
+    color: #6e6e6e;
+    filter: blur(2px);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.X{
+    color: #6e6e6e;
+    filter: blur(2px); 
+    margin-left: 20px;
+}
+
+.wpp{
+    color: #6e6e6e;
+    filter: blur(2px); 
+    margin-left: 20px;
+}
+
+.SimboloInsta{
+    background-color: #BB529F;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+.SimboloX{
+    background-color: #BB529F;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;
+}
+
+.ImagemWpp{
+    background-color: #BB529F;
+    border-radius: 10px; 
+    width: 28px;
+    height: 28px;
+    margin-left: 600px;    
+}
+
+.coracao{
+    width: 39px;
+    height: 39px;
+}
+
+.match{
+    background-color: #f1b0e1;
+    height: 63px;
+    width: 63px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 330px;
+    margin-top: -130px;
+
+}
+
+
+
+
+
+
+
+
+  
