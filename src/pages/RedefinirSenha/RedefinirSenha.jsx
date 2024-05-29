@@ -1,10 +1,8 @@
 import { useState } from "react";
-import './RedefinirSenha.css';
+import "./RedefinirSenha.css";
 import { Footer } from "../Homepage/components/Footer/Footer";
-import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
-;
 
-function RedefinirSenha() {
+export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -26,7 +24,9 @@ function RedefinirSenha() {
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-        <a href="/home" className="voltar">Voltar para a Homepage</a>
+        <a href="/home" className="voltar">
+          Voltar para a Homepage
+        </a>
       </header>
 
       <div className="containerpagredefinir">
@@ -38,10 +38,10 @@ function RedefinirSenha() {
 
               <div className="wrap-input">
                 <input
-                  className={newPassword !== "" ? 'has-val input' : 'input'}
+                  className={newPassword !== "" ? "has-val input" : "input"}
                   type="password"
                   value={newPassword}
-                  onChange={e => setNewPassword(e.target.value)}
+                  onChange={(e) => setNewPassword(e.target.value)}
                   placeholder="Digite a nova senha"
                 />
                 <span className="focus-input"></span>
@@ -49,10 +49,10 @@ function RedefinirSenha() {
 
               <div className="wrap-input">
                 <input
-                  className={confirmPassword !== "" ? 'has-val input' : 'input'}
+                  className={confirmPassword !== "" ? "has-val input" : "input"}
                   type="password"
                   value={confirmPassword}
-                  onChange={e => setConfirmPassword(e.target.value)}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   placeholder="Confirme a nova senha"
                 />
                 <span className="focus-input"></span>
@@ -69,6 +69,4 @@ function RedefinirSenha() {
       <Footer />
     </>
   );
-}
-
-export default RedefinirSenha;
+};
