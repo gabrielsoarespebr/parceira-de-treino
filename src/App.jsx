@@ -11,6 +11,7 @@ import { PaginaLogin } from "./pages/PaginaLogin/PaginaLogin";
 import { RedefinirSenha } from "./pages/RedefinirSenha/RedefinirSenha";
 import { VisaoPerfil } from "./pages/VisaoPerfil/VisaoPerfil";
 import EditarPerfil from "./pages/EditarPerfil/EditarPerfil";
+import { CadastroProfissional } from "./pages/CadastroProfissional/CadastroProfissional";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           element={<MuralDeProfissionais />}
         />
         <Route path="/cadastrousuaria" element={<CadastroUsuaria />} />
+        <Route path="/cadastroprofissional" element={<CadastroProfissional />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/login" element={<PaginaLogin />} />
         <Route path="/termosdeuso" element={<TermosDeUso />} />

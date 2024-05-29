@@ -20,7 +20,7 @@ export const Professional = () => {
         <p>Nossa plataforma conecta você com uma comunidade ativa em busca de orientação para alcançar objetivos de saúde e bem-estar.</p>
         <p>Ao se juntar a nós, você terá a oportunidade de <span>ampliar seu público-alvo e crescer profissionalmente</span>!</p>
       </div>
-      <button className="botaoRoxo">Divulgar meu trabalho</button>
+      <a href="/cadastroprofissional" className="botaoRoxo">Divulgar meu trabalho</a>
     </section>
   );
 };

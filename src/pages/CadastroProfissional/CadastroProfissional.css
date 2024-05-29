@@ -1,0 +1,420 @@
+#voltarParaHomepage {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+
+  color: var(--branco);
+
+  text-decoration: none;
+}
+
+.cadastroProfissional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../../assets/image/fundoTexturaRoxoTranslucido.png");
+}
+
+#etapaCadastroUsuariaNumeroLista {
+  width: 70vw;
+  list-style: none;
+
+  margin: 4vh 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.etapaCadastroUsuaria {
+  width: 70vw;
+
+  padding: 5vw;
+  margin-bottom: 10vh;
+  background-color: var(--branco);
+
+  border: 0.1rem solid var(--roxoEscuro);
+  border-radius: var(--bordaArredondada);
+
+  box-shadow: 0px 0px 15px rgb(161, 161, 161);
+
+  & > h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  & > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+  }
+
+  & fieldset {
+    border: 0;
+
+    margin-top: 4vh;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 2vw;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 0.5vw;
+
+        margin-bottom: 2vh;
+      }
+    }
+  }
+}
+
+#etapaCadastroUsuariaZero {
+  & img {
+    width: 32vw;
+
+    border-radius: var(--bordaArredondada);
+  }
+
+  & ol {
+    padding-left: 2vw;
+    margin: 3vh 0;
+
+    & li {
+      margin-bottom: 1.2vh;
+    }
+  }
+}
+
+#etapaCadastroUsuariaUm {
+  & ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+    margin: 3vh 0;
+
+    & li {
+      width: 23%;
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+          text-align: center;
+
+          font-size: 80%;
+        }
+
+        & img {
+          width: 100%;
+        }
+
+        & input[type="file"] {
+          width: 100%;
+
+          margin-top: 1vh;
+        }
+      }
+    }
+  }
+}
+
+#etapaCadastroUsuariaDois fieldset > div > div > input {
+  width: 80%;
+}
+
+#etapaCadastroUsuariaQuatro > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 6vh;
+}
+
+#etapaCadastroUsuariaQuatro #objetivo,
+#etapaCadastroUsuariaQuatro #esportes {
+  flex-direction: column;
+
+  gap: 2vh;
+
+  & > ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+    & > li {
+      cursor: pointer;
+
+      border: 0.1rem solid var(--roxoEscuro);
+      border-radius: var(--bordaArredondada);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      font-size: 85%;
+
+      padding: 0.2vh 0.5vw;
+    }
+  }
+}
+
+.objetivoAtivo,
+.esporteAtivo {
+  background-color: var(--roxoEscuro);
+  color: var(--branco);
+}
+
+#etapaCadastroUsuariaQuatro #esportes > ul {
+  flex-wrap: wrap;
+}
+
+#etapaCadastroUsuariaQuatro > .botoesDiv,
+#etapaCadastroUsuariaCinco > .botoesDiv {
+  margin-top: 2vh;
+}
+
+#etapaCadastroUsuariaCinco > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+
+  & > div {
+    flex-direction: column;
+
+    & textarea {
+      width: 100%;
+      height: 10vh;
+
+      resize: none;
+    }
+  }
+}
+
+.botoesDiv {
+  display: flex;
+  justify-content: space-between;
+
+  & > a,
+  > button:first-of-type {
+    width: 20%;
+    text-align: center;
+
+    background-color: var(--roxoMedio);
+
+    text-decoration: none;
+
+    padding: 1vh 2vw;
+  }
+
+  & > button:last-of-type {
+    width: 75%;
+
+    background-color: var(--roxoEscuro);
+
+    outline: none;
+    border: none;
+
+    padding: 1vh 2vw;
+  }
+}
+
+.botaoCadastro {
+  cursor: pointer;
+
+  border: none;
+  border-radius: var(--bordaArredondada);
+
+  color: var(--branco);
+
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+
+  font-weight: inherit;
+
+  margin-top: 3vh;
+}
+
+.etapaDesativada,
+.etapaAtivada {
+  padding: 1.7vh 2vw;
+
+  border-radius: 50%;
+}
+
+.etapaDesativada {
+  background-color: rgb(212, 212, 212);
+
+  color: rgb(157, 157, 157);
+}
+
+.etapaAtivada {
+  background-color: var(--roxoMedio);
+
+  color: var(--branco);
+}
+
+.etapaCadastroUsuariaNumero:last-of-type {
+  padding: 1.7vh 1.7vw;
+}
+
+#etapaCadastroUsuariaSeis {
+  & > div:first-of-type {
+    width: 100%;
+
+    margin: 4vh 0 2vh 0;
+
+    & > ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 1vw;
+
+      list-style: none;
+
+      &>li{
+        width: 32%;
+      }
+    }
+  }
+
+  & .plano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2vw;
+
+    border-radius: var(--bordaArredondada);
+    border: 2px solid #7b7b87;
+
+    color: #7b7b87;
+    background-color: white;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.04);
+
+    & p {
+      margin: 0;
+    }
+
+    & > p:first-of-type {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    & > div:first-of-type {
+      display: flex;
+
+
+      & > p:first-of-type {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      & > p:nth-child(2) {
+        margin-top: 4.5vh;
+      }
+    }
+
+    & > p:nth-child(3),
+    > div:first-of-type > p:nth-child(2) {
+      font-size: 65%;
+      font-weight: 600;
+
+      text-align: center;
+      color: #7b7b87;
+    }
+
+    & > button {
+      cursor: pointer;
+
+      margin: 2vh 0;
+      padding: 1.5vh 2vw;
+
+      font-weight: 600;
+
+      color: var(--branco);
+
+      border: none;
+      border-radius: var(--bordaArredondada);
+
+      & > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 1vw;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      color: #7b7b87;
+
+      & > li {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+      font-size: 70%;
+      }
+    }
+  }
+}
+
+#planoFree {
+  & button {
+    color: var(--branco);
+    background: linear-gradient(40deg, rgb(67, 67, 67), #7b7b87);
+  }
+}
+
+#planoPlus {
+  & > p:first-of-type {
+    color: var(--roxoMedio);
+  }
+
+  & > div:first-of-type {
+    color: var(--roxoMedio);
+  }
+
+  & button {
+    background: linear-gradient(40deg, var(--roxoMedio), var(--roxoClaro));
+  }
+}
+
+#planoPremium {
+  & > p:first-of-type {
+    color: #671c61;
+  }
+
+  & > div:first-of-type {
+    color: #671c61;
+  }
+
+  & button {
+    background: linear-gradient(40deg, #671c61, #b525a9);
+  }
+}
