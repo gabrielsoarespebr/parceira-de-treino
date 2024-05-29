@@ -54,7 +54,7 @@ export const Benefits = () => {
           </li>
         ))}
       </ul>
-      <button className="botaoRoxo">Aproveitar benefícios</button>
+      <a href="/cadastrousuaria" className="botaoRoxo">Aproveitar benefícios</a>
     </section>
   );
 };

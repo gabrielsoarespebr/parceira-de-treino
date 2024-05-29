@@ -1,7 +1,7 @@
 export enum Objetivos {
   "Ganhar músculo" = 1,
   "Perder peso",
-  "Vida Saudável",
+  "Vida saudável",
   "Projeto Verão",
   "Competir",
 }
