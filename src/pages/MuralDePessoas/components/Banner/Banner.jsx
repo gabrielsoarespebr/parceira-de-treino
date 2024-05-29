@@ -1,4 +1,5 @@
 import "./Banner.css";
+import duplaParceiras3 from "/src/assets/image/duplaParceiras3.jpg";
 
 export const Banner = () => {
   return (
@@ -8,7 +9,7 @@ export const Banner = () => {
         <p className="fonteTitulo textoMaiusculo">Mais fortes!</p>
       </div>
       <img
-        src="./src/assets/image/duplaParceiras3.jpg"
+        src={duplaParceiras3}
         alt="Parceiras de treino sorrindo enquanto treinam"
       />
     </div>

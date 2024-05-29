@@ -164,7 +164,7 @@ export const UsuariaCard = ({ usuaria,OcultarUsuaria }) => {
           </div>
         </div>
         <img
-          src={`./src/assets/image/usuarias/${fotoPerfilUrl}`}
+          src={`https://raw.githubusercontent.com/gabrielsoarespebr/parceira-de-treino/main/src/assets/image/usuarias/${fotoPerfilUrl}.png`}
           alt="Foto de usuária"
         />
       </div>

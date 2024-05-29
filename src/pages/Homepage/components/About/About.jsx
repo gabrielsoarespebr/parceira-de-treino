@@ -45,7 +45,7 @@ export const About = () => {
         })}
       </ul>
 
-      <button className="botaoRoxo">Encontre sua fit sister</button>
+      <a href="/cadastrousuaria" className="botaoRoxo">Encontre sua fit sister</a>
     </section>
   );
 };
