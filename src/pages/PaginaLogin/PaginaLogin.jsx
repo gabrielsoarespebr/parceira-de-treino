@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./PaginaLogin.css";
-// import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
+import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
 import { Footer } from "../Homepage/components/Footer/Footer";
 
 export const PaginaLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  console.log('Path to mulheres login:', mulheresLogin)
 
   return (
     <>

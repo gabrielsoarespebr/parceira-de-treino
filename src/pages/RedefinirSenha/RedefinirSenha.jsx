@@ -8,6 +8,7 @@ export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,6 +18,8 @@ export const RedefinirSenha = () => {
       console.log("As senhas não coincidem");
     }
   };
+
+  console.log('Path to mulheres login:', Fundo);
 
   return (
     <>
