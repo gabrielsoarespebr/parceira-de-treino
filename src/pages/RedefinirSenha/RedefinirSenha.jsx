@@ -1,11 +1,8 @@
 import { useState } from "react";
 import "./RedefinirSenha.css";
 import { Footer } from "../Homepage/components/Footer/Footer";
-<<<<<<< HEAD
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
 import CadeadoIcone from "/src/assets/image/iconecadeado.png";
-=======
->>>>>>> c859fb2b0c0598920295c5615c5ea7fc879aaa0e
 
 export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -29,13 +26,8 @@ export const RedefinirSenha = () => {
           alt="Logotipo FitSister"
           id="logoHeader"
         />
-<<<<<<< HEAD
-         <a href="/" className="voltarhome">
-          <p>Voltar para Homepage</p>
-=======
         <a href="/home" className="voltar">
           Voltar para a Homepage
->>>>>>> c859fb2b0c0598920295c5615c5ea7fc879aaa0e
         </a>
       </header>
 
