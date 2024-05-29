@@ -4,16 +4,11 @@ import { Homepage } from "./pages/Homepage/Homepage";
 import  { MuralDePessoas }  from "./pages/MuralDePessoas/MuralDePessoas";
 import { MuralDeProfissionais } from "./pages/MuralDeProfissionais/MuralDeProfissionais";
 import { Chat } from "./pages/Chat/Chat";
-<<<<<<< HEAD
 import  PaginaLogin  from "./pages/PaginaLogin/PaginaLogin";
 import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
 import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
 import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
 
-=======
-import PaginaLogin from "./pages/PaginaLogin/PaginaLogin";
-import RedefinirSenha from "./pages/RedefinirSenha/RedefinirSenha";
->>>>>>> feature/redefinirsenha
 
 function App() {
   return (
@@ -30,12 +25,8 @@ function App() {
         <Route path="/cadastrousuaria" element={<CadastroUsuaria />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/login" element={<PaginaLogin/>} />
-<<<<<<< HEAD
         <Route path="/termosdeuso" element={<TermosDeUso />} />
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
-=======
-        <Route path="/redefinirsenha" element={<RedefinirSenha/>} /> 
->>>>>>> feature/redefinirsenha
       </Routes>
     </BrowserRouter>
   );
