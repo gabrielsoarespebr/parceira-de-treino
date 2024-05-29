@@ -8,8 +8,6 @@ import  PaginaLogin from "./pages/PaginaLogin/PaginaLogin";
 import { CadastroUsuaria } from "./pages/CadastroUsuaria/CadastroUsuaria";
 import { TermosDeUso } from "./pages/TermosDeUso/TermosDeUso";
 import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDePrivacidade";
-
-
 import RedefinirSenha from "./pages/RedefinirSenha/RedefinirSenha";
 
 function App() {
