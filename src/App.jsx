@@ -10,6 +10,7 @@ import { PoliticaDePrivacidade } from "./pages/PoliticaDePrivacidade/PoliticaDeP
 import { PaginaLogin } from "./pages/PaginaLogin/PaginaLogin";
 import { RedefinirSenha } from "./pages/RedefinirSenha/RedefinirSenha";
 import { VisaoPerfil } from "./pages/VisaoPerfil/VisaoPerfil";
+import EditarPerfil from "./pages/EditarPerfil/EditarPerfil";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         />
         <Route path="/redefinirsenha" element={<RedefinirSenha />} />
         <Route path="/visaoperfil" element={<VisaoPerfil />} />
+        <Route path="/editarperfil" element={<EditarPerfil />} />
       </Routes>
     </BrowserRouter>
   );
