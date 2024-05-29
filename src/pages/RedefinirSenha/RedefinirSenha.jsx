@@ -1,10 +1,13 @@
 import { useState } from "react";
-import './RedefinirSenha.css';
+import "./RedefinirSenha.css";
 import { Footer } from "../Homepage/components/Footer/Footer";
+<<<<<<< HEAD
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
 import CadeadoIcone from "/src/assets/image/iconecadeado.png";
+=======
+>>>>>>> c859fb2b0c0598920295c5615c5ea7fc879aaa0e
 
-function RedefinirSenha() {
+export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -26,8 +29,13 @@ function RedefinirSenha() {
           alt="Logotipo FitSister"
           id="logoHeader"
         />
+<<<<<<< HEAD
          <a href="/" className="voltarhome">
           <p>Voltar para Homepage</p>
+=======
+        <a href="/home" className="voltar">
+          Voltar para a Homepage
+>>>>>>> c859fb2b0c0598920295c5615c5ea7fc879aaa0e
         </a>
       </header>
 
@@ -43,10 +51,10 @@ function RedefinirSenha() {
 
               <div className="wrap-input">
                 <input
-                  className={newPassword !== "" ? 'has-val input' : 'input'}
+                  className={newPassword !== "" ? "has-val input" : "input"}
                   type="password"
                   value={newPassword}
-                  onChange={e => setNewPassword(e.target.value)}
+                  onChange={(e) => setNewPassword(e.target.value)}
                   placeholder="Digite a nova senha"
                 />
                 <span className="focus-input"></span>
@@ -54,10 +62,10 @@ function RedefinirSenha() {
 
               <div className="wrap-input">
                 <input
-                  className={confirmPassword !== "" ? 'has-val input' : 'input'}
+                  className={confirmPassword !== "" ? "has-val input" : "input"}
                   type="password"
                   value={confirmPassword}
-                  onChange={e => setConfirmPassword(e.target.value)}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   placeholder="Confirme a nova senha"
                 />
                 <span className="focus-input"></span>
@@ -75,6 +83,4 @@ function RedefinirSenha() {
       <Footer />
     </>
   );
-}
-
-export default RedefinirSenha;
+};
