@@ -4,11 +4,11 @@ import { Footer } from "../Homepage/components/Footer/Footer";
 import Fundo from "/src/assets/image/fundoTexturaRoxo.png";
 import CadeadoIcone from "/src/assets/image/iconecadeado.png";
 import logo from "/src/assets/image/logoBranco.png";
+import { Divider } from "../../shared/components/Divider/Divider";
 
 export const RedefinirSenha = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,16 +20,12 @@ export const RedefinirSenha = () => {
     }
   };
 
-  console.log('Path to mulheres login:', Fundo);
+  console.log("Path to mulheres login:", Fundo);
 
   return (
     <>
       <header>
-        <img
-          src={logo}
-          alt="Logotipo FitSister"
-          id="logoHeader"
-        />
+        <img src={logo} alt="Logotipo FitSister" id="logoHeader" />
         <a href="/home" className="voltar">
           Voltar para a Homepage
         </a>
@@ -69,13 +65,16 @@ export const RedefinirSenha = () => {
 
               <div className="container-redefinir-form-botao">
                 <button className="redefinir-form-botao">
-                  <a href="/login" className="letradobotaoalterar">Alterar</a></button>
+                  <a href="/login" className="letradobotaoalterar">
+                    Alterar
+                  </a>
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
-
+      <Divider />
       <Footer />
     </>
   );

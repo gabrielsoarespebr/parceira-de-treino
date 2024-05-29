@@ -3,32 +3,28 @@ import "./PaginaLogin.css";
 import mulheresLogin from "/src/assets/image/mulhereslogin.jpg";
 import { Footer } from "../Homepage/components/Footer/Footer";
 import logo from "/src/assets/image/logoBranco.png";
-
+import { Divider } from "../../shared/components/Divider/Divider";
 
 export const PaginaLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log('Path to mulheres login:', mulheresLogin)
+  console.log("Path to mulheres login:", mulheresLogin);
 
   return (
     <>
       <header>
-        <img
-          src={logo}
-          alt="Logotipo FitSister"
-          id="logoHeader"
-        />
+        <img src={logo} alt="Logotipo FitSister" id="logoHeader" />
         <a href="/">
-        <p className="voltarhome">Voltar para Homepage</p> 
+          <p className="voltarhome">Voltar para Homepage</p>
         </a>
-      </header>
-    
-    <div className="containerpaglogin"> 
-          <div className="container-login">
-             <div className="wrap-login">
-               <form className="login-form">
-                 <span className="login-form-title">Bem vinda!</span>
+      </header>
+
+      <div className="containerpaglogin">
+        <div className="container-login">
+          <div className="wrap-login">
+            <form className="login-form">
+              <span className="login-form-title">Bem vinda!</span>
 
               <div className="wrap-input">
                 <input
@@ -55,19 +51,24 @@ export const PaginaLogin = () => {
               </a>
 
               <div className="container-login-form-botao">
-                <button className="login-form-botao" >
-                  <a href="/muraldesisters" className="login-form-botao-letras">Entrar</a></button>
+                <button className="login-form-botao">
+                  <a href="/muraldesisters" className="login-form-botao-letras">
+                    Entrar
+                  </a>
+                </button>
               </div>
 
               <div className="criarconta">
                 <span className="criarconta1">Não possui conta?</span>
-                <a href="/cadastrousuaria" className="criarconta2">Se cadastre</a>
+                <a href="/cadastrousuaria" className="criarconta2">
+                  Se cadastre
+                </a>
               </div>
             </form>
           </div>
         </div>
       </div>
-
+      <Divider />
       <Footer />
     </>
   );
