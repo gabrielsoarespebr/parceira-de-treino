@@ -28,6 +28,7 @@ function App() {
         <Route path="/login" element={<PaginaLogin/>} />
         <Route path="/termosdeuso" element={<TermosDeUso />} />
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
+        <Route path="/redefinirsenha" element={<RedefinirSenha />} />
       </Routes>
     </BrowserRouter>
   );
