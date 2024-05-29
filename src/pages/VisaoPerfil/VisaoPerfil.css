@@ -1,10 +1,11 @@
 .CaixaVisuPerfil{
-    background-color: rgb(230, 227, 221);
+    background-color: rgb(236, 234, 228);
     width: 846px;
     height: 734px;
     border-radius: 25px;
     margin-top: 50px;
     margin-left: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .imagemPerfil{

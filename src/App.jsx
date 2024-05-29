@@ -5,6 +5,7 @@ import { MuralDePessoas } from "./pages/MuralDePessoas/MuralDePessoas";
 import { MuralDeProfissionais } from "./pages/MuralDeProfissionais/MuralDeProfissionais";
 import { Chat } from "./pages/Chat/Chat";
 import VisaoPerfil from "./pages/VisaoPerfil/VisaoPerfil";
+import EditarPerfil from "./pages/EditarPerfil/EditarPerfil";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/muraldeprofissionais" element={<MuralDeProfissionais />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/visaoperfil" element={<VisaoPerfil />} />
+        <Route path="/editarperfil" element={<EditarPerfil />} />
       </Routes>
     </BrowserRouter>
   );
